@@ -1,0 +1,378 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+#header {
+	position: relative;
+	height: 200px;
+	background: url(../images/banner2.png) no-repeat;
+}
+
+
+#navbar1,
+#navbar {
+	position: absolute;
+	top:  75%;
+	max-width: 770px;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	z-index: 30;
+}
+
+#navbar1 li,
+#navbar li{	
+	color: #FFF;
+	text-align:center;
+	text-decoration: none;
+	list-style: none;
+	float: left;
+	text-align:center;
+}
+
+#navbar1 li a,
+#navbar li a{
+	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	min-width: 80px;
+	height: 33px;
+	background: #333 url(../images/tab1.jpg) no-repeat;
+	line-height:2.5;
+	color: #fff;
+}
+
+#navbar li:hover {
+	background: #000 url(../images/tab1over.jpg) no-repeat;		
+}
+
+#navbar li a:hover { 
+	background: #000 url(../images/tab1over.jpg) no-repeat;	
+	color: #FF8000;
+}
+
+#navbar1 div,
+#navbar div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+#navbar1 div a,
+#navbar div a	{	
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #333;
+	color: #fff;
+}
+
+#navbar1 div a:hover,
+#navbar div a:hover{
+	background: #000;
+	color: #FF8000;
+}
+ 
+#navbar1 li a:hover { 
+	color: #FF8000;
+} 
+ 
+/* customizations for sensitivity/charts page 
+majority of design from stack exchange jsFiddle.
+I just changed colors and deleted silly stuff*/
+#pagin {
+    clear: both;
+    padding:0px 0px 0px 0px;
+	max-width: 770px;
+    margin:0 auto;
+}
+
+#pagin li {
+    float:left;
+    margin-right:1px;
+}
+
+#pagin li a {
+    display:block;
+    color:#fff;	/*text color*/
+    font:bold 14px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+    box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+    background:#333333;
+}
+
+#pagin li a.current {
+    color:white;
+    text-shadow:0px 1px #3f789f;
+    -webkit-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+    box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+    background:#FF6600;
+    background:-webkit-linear-gradient(top,#FF6600 0%,#FF9900 100%);
+    background:-moz-linear-gradient(top,#FF6600 0%,#FF9900 100%);
+    background:-o-linear-gradient(top,#FF6600 0%,#FF9900 100%);
+    background:-ms-linear-gradient(top,#FF6600 0%,#FF9900 100%);
+    background:linear-gradient(top,#FF6600 0%,#FF9900 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF6600',endColorstr='#FF9900',GradientType=0 );
+}
+
+#pagin li a:hover {
+    -webkit-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.55);
+    box-shadow:0px 1px 3px 0px rgba(0,0,0,0.55);
+    background:#333333;
+}
+
+#pagin li a:active,#pagin li a.current:active {
+    -webkit-box-shadow:inset 0px 1px 3px 0px rgba(0,0,0,0.5),0px 1px 1px 0px rgba(255,255,255,1) !important;
+    -moz-box-shadow:inset 0px 1px 3px 0px rgba(0,0,0,0.5),0px 1px 1px 0px rgba(255,255,255,1) !important;
+    box-shadow:inset 0px 1px 3px 0px rgba(0,0,0,0.5),0px 1px 1px 0px rgba(255,255,255,1) !important;
+}
+
+#pagin li a.current:hover {
+    -webkit-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.9);
+    box-shadow:0px 1px 2px 0px rgba(0,0,0,0.9);
+    background:#FF6600;
+    background:-webkit-linear-gradient(top,#FF6600 0%,#FF8000 100%);
+    background:-moz-linear-gradient(top,#FF6600 0%,#FF8000 100%);
+    background:-o-linear-gradient(top,#FF6600 0%,#FF8000 100%);
+    background:-ms-linear-gradient(top,#FF6600 0%,#FF8000 100%);
+    background:linear-gradient(top,#FF6600 0%,#FF8000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF6600',endColorstr='#FF8000',GradientType=0 );
+}
+ 
+
+/*	About Tab */
+/** the css for the tabAccord used in About.php and services.php **/
+
+#navbar2 {
+	position: absolute;
+	top:  75%;
+	max-width: 770px;
+	height: 45px;
+}
+
+#navbar2 ul { list-style : none; }
+
+#navbar2 li { 	
+	display: inline-block;
+	margin: 0 -1px;
+	min-width: 100px; height: 43px;
+	background: #333 url(../images/tab1.jpg) no-repeat;
+	text-align:center;
+}
+
+#navbar2 li:hover {
+	background: #000 url(../images/tab1over.jpg) no-repeat;		
+}
+#navbar2 li a { 
+	display: block;
+	margin-top: 10px;
+}
+#navbar2 li a:hover { 
+	color: #fff;
+}
+ 
+.map {
+	padding: 0;
+	margin-top: 25px;
+	height: 750px;
+	width: 935px;
+	}
+
+#info {
+    position: absolute;
+	margin-top:500px;
+    padding: 10px;
+    background-color: #ddd;
+    font: 10px Segoe UI;
+    width: 100px;
+	height: 215px;
+    text-align: center;
+    border-radius: 0 10px 0 0;
+	z-index: 1;
+  }	
+	
+.box{
+	background: #ffffff;
+	font: 14px "Times New Roman", serif;
+	color:#333333;
+	width: 960px;
+	text-align: justify;
+}
+.boxholder{
+clear: both;
+padding: 5px;
+background: #ffffff;
+}
+.tab{
+float: left;
+height: 32px;
+width: 102px;
+margin: 0 1px 0 0;
+text-align: center;
+background: #FF6600 url(../images/tab.jpg) no-repeat;
+}
+.tab:hover{
+	background: #FF6600 url(../images/tabover.jpg) no-repeat;
+}
+.tabtxt{
+margin: 0;
+color: #fff;
+font-size: 12px;
+font-weight: bold;
+padding: 9px 0 0 0;
+}
+.tabtxt a:hover{
+	color: #fff;
+}
+.team_member_side1	{
+	width: 48%; height: 100%;
+	display: inline-block;
+	margin-left: 10px; margin-top: 10px;
+/*	margin-bottom: 30px;*/
+}
+
+.team_member_side1 img	{
+	float: left;
+	margin-right: 0.8em;
+}
+
+.team_member_side1 p	{
+	margin-bottom: 1em;
+	margin-left: 0.8em;
+}
+
+.team_member_side2		{
+	width: 48%; height: 100%;
+	display: inline-block;
+	margin-left: 10px; margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.team_member_side2 img	{
+	float: left;
+}
+
+
+/** {
+	FORM CLASSES
+	
+	button orange third ---> used together for the button  Example: 'NEXT'
+	
+	Map ---> Used to Format the Size and other general range of Map.
+	#small
+	#Medium
+	#Big
+}
+*/
+
+.button {
+display: inline-block;
+outline: none;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font: 14px/100% "Century Gothic", Arial, Helvetica, sans-serif;
+padding: .5em 2em .55em;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+box-shadow: 0 1px 2px rgba(0,0,0,.2);
+position:relative;
+left:0.5%;
+
+}
+
+.button:hover {
+text-decoration: none;
+}
+
+.button:active {
+position: relative;
+top: 1px;
+}
+
+.orange {
+color: #fef4e9;
+border: solid 1px #da7c0c;
+background: #f78d1d;
+background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+}
+
+.orange:hover {
+background: #f47c20;
+background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+}
+
+.orange:active {
+color: #fcd3a5;
+background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+}
+
+.third{
+	position:relative;
+	margin-left:0.5%;
+}
+
+.moveRight{
+	margin: 6px 2px;
+	float:right;
+}
+
+.paddMe{
+	margin-right:45px;
+}
+
+/**MAP DIV*/
+#map {
+padding: 0;
+margin: 0;
+height: 750px;		/*100%;*/
+width: 935px;
+}
+
+
+/** Footer*/
+/*- copyright -*/
+#copyright {
+	clear:both;
+	margin:20px 30px 0 30px;
+	padding:10px;
+	border-top:1px solid #dddddd;
+	text-align:right;
+}
+
+#copyright img { 
+	float:right; 
+	margin-left: 10px;
+}
+
+/* Paragraph */
+#copyright p {
+color : #333333;
+padding : 5px;
+font-size: 12px;
+font: Cambria;
+line-height:10px;
+}

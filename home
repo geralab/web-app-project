@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> BLAPPO'S  </title>
+		<link rel="stylesheet" type="text/css" href="gstyle.css">
+	</head>
+	<body>
+		<h1 class = "title"> BLAPPO's </h1>
+		<ul id="navbar">
+			<li><a href = "trailers">TRAILERS</a></li>
+			<li><a href = "register">REGISTER</a></li>
+			<li><a href = "login.php">LOGIN</a><li>
+			
+			
+			
+			
+		</ul>
+		<div class = "normal"></div>
+		<div><p class = "gold"> BLAPPO'S HOME</p></div>
+		<div class = "contain">
+        <h1> N GAME</h1>
+		<object classid="game:1" width="1000" height="1000">
+			<param name="movie" value="ninjanoku.swf" />
+			<object type="application/x-shockwave-flash" data="n-game.swf" width="1000" height="1000">
+        <!--<![endif]-->
+				<p>Alternative content</p>
+        <!--[if !IE]>-->
+			</object>
+		</object>
+		</div>
+		<br><br>
+		<div class = "contain">
+		<h1> SHOOTER</h1>
+		<object classid="game:2" width="1000" height="1000">
+			<param name="movie" value="game1.swf" />
+			<object type="application/x-shockwave-flash" data="game1.swf" width="1000" height="1000">
+        <!--<![endif]-->
+				<p>Alternative content</p>
+        <!--[if !IE]>-->
+			</object>
+		</object>
+		</div>
+		
+		
+	</body>
+</html>
