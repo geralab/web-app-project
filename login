@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+AddType application/x-httpd-php .bop .foo .133t
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="gstyle.css">
