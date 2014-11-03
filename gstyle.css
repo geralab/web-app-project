@@ -9,8 +9,8 @@ body
 }
 img
 {
-	width:1000px;
-	height:1000px;
+	width:600px;
+	height:600px;
 }
 input[type="text"]:disabled
 {
@@ -207,8 +207,11 @@ div.contain
 	font-weight:bold;
 	font-size: 18px;
 	color: #000000;
-	padding: 8px 20px;
+	padding: 10px 8px;
 	background-color: #FFFFFF;
+	position:relative;
+	width:630px;
+    height:630px;
 
 }
 label {

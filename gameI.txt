@@ -1,15 +1,18 @@
 CREATE TABLE Gamer (userName VARCHAR(100), email VARCHAR(100),
  salt VARCHAR(100), passwordHash VARCHAR(100), PRIMARY KEY(userName));
   
-CREATE TABLE Game (fileName VARCHAR(100),pic VARCHAR(100), gameId VARCHAR(100), PRIMARY KEY(fileName,pic,gameId));
+CREATE TABLE Game (fileName VARCHAR(100),pic VARCHAR(100), gameId VARCHAR(100), description VARCHAR(100000)
+,likes INT, PRIMARY KEY(fileName,pic,gameId));
 
-INSERT INTO Gamer (userName, salt, passwordHash) VALUES
-	('r2d2', 'a2a712f3c9d89af91fe34c6b0d20eddd', 'aca2c517850ea2d1f9883913eda39390a6d9f1fb5d94448b0293980ed1e5a1b6'),
-	('c3po', '679a4e26587ad06c34bce7348be60d15', '4903c2b6bd66562b669b613d18904b4afb616751690bbebf4ff8084fb9e4b9e8');
+CREATE TABLE Trailer (link VARCHAR(3000), PRIMARY KEY(link));
+
+INSERT INTO Gamer (userName,email, salt, passwordHash) VALUES
+	('r2d2','gogo@yahoo.com', 'a2a712f3c9d89af91fe34c6b0d20eddd', 'aca2c517850ea2d1f9883913eda39390a6d9f1fb5d94448b0293980ed1e5a1b6'),
+	('c3po','pyjuku@gmail.com', '679a4e26587ad06c34bce7348be60d15', '4903c2b6bd66562b669b613d18904b4afb616751690bbebf4ff8084fb9e4b9e8');
 
 
-REPLACE INTO Game (fileName,pic,gameId) VALUES	('n-game.swf','ngame.jpg','N-GAME'),
-('game1.swf','shooter.gif','GAME1');
+INSERT INTO Game (fileName,pic,gameId,description,likes) VALUES	('n-game.swf','ngame.jpg','N-GAME','Youre a black ninja in a race against time traversing numerous treacherous obstacles!',1000),
+('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500);
 
 		
 		

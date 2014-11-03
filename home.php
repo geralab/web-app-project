@@ -42,7 +42,7 @@
 						$pic = $row['pic'];
 						echo '<div class = "contain">';
 						echo '<a href = "direct.php?direct='.$gameId.'"><img src = "'.$pic.'"></a>';
-						echo "</div>";
+						echo "</div><div></div>";
 						echo "<br/>";
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 					}

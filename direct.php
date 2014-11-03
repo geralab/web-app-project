@@ -7,8 +7,10 @@
 <body>
 <h1 class = "title">GAME PAGE</h1>
 		<ul id="navbar">
-		    <li><a href = "http://www.cs.okstate.edu/~geralab/home">HOME</a></li>
+		    <li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>
 		</ul>
+		<br>
+		<br>
 <?php
 		
 	    $direct = $_GET["direct"];
