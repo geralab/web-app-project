@@ -39,7 +39,7 @@
 				{
 					$gameId = $row['gameId'];
 					$fileName = $row['fileName'];
-					echo '<div class = "contain">';
+					//echo '<div class = "contain">';
 					echo "<h1>$gameId</h1>";
 					echo '<object classid="game:1" width="1000" height="1000">';
 					echo' <param name="movie" value="'.$fileName.'" />';
@@ -49,7 +49,7 @@
 					echo '<!--[if !IE]>-->';
 					echo '</object>';
 					echo '</object>';
-					echo '</div>';
+					//echo '</div>';
 					echo '<br><br>';
 				}
 				echo "<br/>";

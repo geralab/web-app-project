@@ -209,10 +209,21 @@ div.contain
 	color: #000000;
 	padding: 10px 8px;
 	background-color: #FFFFFF;
-	position:relative;
 	width:630px;
     height:630px;
 
+}
+div.descript
+{
+	font-family: impact;
+	font-weight:bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 10px 8px;
+	background-color: #0000FF;
+	float:right;
+	width:630px;
+    height:120px;
 }
 label {
 font-family:impact;

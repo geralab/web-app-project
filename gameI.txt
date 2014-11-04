@@ -4,7 +4,7 @@ CREATE TABLE Gamer (userName VARCHAR(100), email VARCHAR(100),
 CREATE TABLE Game (fileName VARCHAR(100),pic VARCHAR(100), gameId VARCHAR(100), description VARCHAR(100000)
 ,likes INT, PRIMARY KEY(fileName,pic,gameId));
 
-CREATE TABLE Trailer (link VARCHAR(3000), PRIMARY KEY(link));
+CREATE TABLE Trailer (name VARCHAR(100), link VARCHAR(3000));
 
 INSERT INTO Gamer (userName,email, salt, passwordHash) VALUES
 	('r2d2','gogo@yahoo.com', 'a2a712f3c9d89af91fe34c6b0d20eddd', 'aca2c517850ea2d1f9883913eda39390a6d9f1fb5d94448b0293980ed1e5a1b6'),
@@ -12,7 +12,9 @@ INSERT INTO Gamer (userName,email, salt, passwordHash) VALUES
 
 
 INSERT INTO Game (fileName,pic,gameId,description,likes) VALUES	('n-game.swf','ngame.jpg','N-GAME','Youre a black ninja in a race against time traversing numerous treacherous obstacles!',1000),
-('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500);
+('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500)
+,('nindroid.swf','nindroid.jpg','NINDROIDS','Play as a group of Ninjas on a quest to save the world',4000)
+,('decisionCity.swf','decisionCity.png','DECISION CITY','SHOOT AND KILL AS MANY ZOMBIES AS YOU FUCKING CAN',80000);
 
-		
-		
+INSERT INTO Trailer (name,link) VALUES ('DECESION CITY','//www.youtube.com/embed/OktzRuxlUa8'),('DESTINY','//www.youtube.com/embed/clRpcIHpmoY')
+,('ASSASINS CREED','//www.youtube.com/embed/ZeWSedqvxSg');

@@ -7,7 +7,10 @@
 	<body>
 		<h1 class = "title"> BLAPPO's </h1>
 		<ul id="navbar">
-			<li><a href = "trailers">TRAILERS</a></li>
+			<li><a href = "profile">PROFILE</a></li>
+			<li><a href = "statistics">GLOBAL STATISTICS</a></li>
+			<li><a href = "trailers.php">TRAILERS</a></li>
+			<li><a href = "downloads">DOWNLOADS</a></li>
 			<li><a href = "register">REGISTER</a></li>
 			<li><a href = "login.php">LOGIN</a><li>
 		</ul>
@@ -40,10 +43,12 @@
 					{
 					    $gameId = $row['gameId'];
 						$pic = $row['pic'];
-						echo '<div class = "contain">';
+						$description = $row['description'];
+						$likes = $row['likes'];
+						echo '<div>';
+						echo "<div class = \"descript\"><p>$description<br> NUMBER OF LIKES: $likes</p></div>";
 						echo '<a href = "direct.php?direct='.$gameId.'"><img src = "'.$pic.'"></a>';
-						echo "</div><div></div>";
-						echo "<br/>";
+						echo "</div><br/>";
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 					}
 				}
