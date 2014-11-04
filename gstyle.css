@@ -220,10 +220,16 @@ div.descript
 	font-size: 18px;
 	color: #FFFFFF;
 	padding: 10px 8px;
-	background-color: #0000FF;
+	/*background-color: #0000FF;*/
+	background-image: url("message.png");
+	background-size: 630px 300px;
+    background-repeat: no-repeat;
 	float:right;
 	width:630px;
-    height:120px;
+    height:300px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
 }
 label {
 font-family:impact;

@@ -7,7 +7,8 @@
 <body>
 <h1 class = "title">LOGIN</h1>
 		<ul id="navbar">
-		    <li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>
+		    <li><a href = "home.php">HOME</a></li>
+			<li><a href = "register.php">REGISTER</a></li>
 		</ul>
 <?php
 		session_start();
@@ -38,7 +39,8 @@
 			{
 				$_SESSION['user'] = $user;
 				$_SESSION['password'] = $password;
-				header('Location:home.php');
+				$_SESSION['loggedIn']  = 1;
+				header('Location:profile.php');
 			}
 			else
 			{

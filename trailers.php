@@ -7,12 +7,11 @@
 	<body>
 		<h1 class = "title"> BLAPPO's TRAILERS</h1>
 		<ul id="navbar">
-			<li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>
-			<li><a href = "profile">PROFILE</a></li>
-			<li><a href = "statistics">GLOBAL STATISTICS</a></li>
-			<li><a href = "trailers">TRAILERS</a></li>
-			<li><a href = "downloads">DOWNLOADS</a></li>
-			<li><a href = "register">REGISTER</a></li>
+			<li><a href = "home.php">HOME</a></li>
+			<li><a href = "profile.php">PROFILE</a></li>
+			<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>
+			<li><a href = "downloads.php">DOWNLOADS</a></li>
+			<li><a href = "register.php">REGISTER</a></li>
 			<li><a href = "login.php">LOGIN</a><li>
 		</ul>
 		<div class = "normal"></div>
@@ -43,7 +42,7 @@
 					while ($row)
 					{
 					    $link = $row['link'];
-						echo '<iframe width="560" height="315" src="'.$link.'" frameborder="0" allowfullscreen></iframe>';
+						echo '<center><iframe width="560" height="315" src="'.$link.'" frameborder="0" allowfullscreen></iframe></center>';
 						echo '<br>';
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 					}
