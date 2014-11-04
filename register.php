@@ -2,16 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="gstyle.css">
-  <title> LOGIN</title>
+  <title>REGISTER</title>
 </head>
 <body>
-<h1 class = "title">LOGIN</h1>
+<h1 class = "title">REGISTER</h1>
 		<ul id="navbar">
 		    <li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>
 		</ul>
 <?php
-		session_start();
-		$_SESSION['loggedIn'] = 0;
 		$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 	    $dbPassword = trim($fileText);
 		$dbUser = 'geralab';
@@ -23,36 +21,31 @@
 			printf("Connect failed: %s\n", mysqli_connect_error());
 			exit();
 		}
-		if (array_key_exists('user', $_POST) && 
-				array_key_exists('password', $_POST) )
+		if (array_key_exists('userName', $_POST) && 
+				array_key_exists('password', $_POST) 
+				&& array_key_exists('email', $_POST))
 		{
-			$user = $_POST['user'];
+			$userName = $_POST['userName'];
 			$password = $_POST['password'];
-			$query = "SELECT * FROM Gamer WHERE userName = '$user';";
-			$salt = getInfo($query,'salt',$database);
-			$dbHash = getInfo($query,'passwordHash',$database);
+			$email = $_POST['email'];
+			$salt = openssl_random_pseudo_bytes(16, $cstrong);
+			$salt = bin2hex($salt);
 		    $passAndSalt = $password . $salt;
 			$passHash = hash('sha256', $passAndSalt);
 			//to here
-			if($dbHash == $passHash)
-			{
-				$_SESSION['user'] = $user;
-				$_SESSION['password'] = $password;
-				header('Location:home.php');
-			}
-			else
-			{
-				echo '<div class = "out"><h4 id="out"><pre class = "normal">INVALID CREDENTIALS
-							</pre></h4></div>';
-			}
+			$query = "INSERT INTO Gamer (userName,email, salt, passwordHash) VALUES
+	('$userName','$email', '$salt', '$passHash');";
+			$result = $database->query($query);
 		}
-		echo '<div class = "login"><form class = "login" id="loginForm" name="loginForm" action="login.php" method="POST">', "\n";
-		echo '<label for="user">Username:</label>';
-		echo '<input type="textfield" name="user"><br/>', "\n";
+		echo '<div class = "login"><form class = "login" id="registerForm" name="loginForm" action="register.php" method="POST">', "\n";
+		echo '<label for="userName">Username:</label>';
+		echo '<input type="textfield" name="userName"><br/>', "\n";
 		echo '<label for="password">Password:</label>';
 		echo '<input type="password" name="password"><br/>', "\n";
+		echo '<label for="email">E-MAIL:</label>';
+		echo '<input type="textfield" name="email"><br/>', "\n";
 		echo '<br/>', "\n";
-		echo '<input class = "button" type="submit" value="LOGIN">', "\n";
+		echo '<input class = "button" type="submit" value="REGISTER">', "\n";
 		echo '</form><br/>', "\n";
 		echo '</div>';
 		

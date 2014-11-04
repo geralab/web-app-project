@@ -17,4 +17,5 @@ INSERT INTO Game (fileName,pic,gameId,description,likes) VALUES	('n-game.swf','n
 ,('decisionCity.swf','decisionCity.png','DECISION CITY','SHOOT AND KILL AS MANY ZOMBIES AS YOU FUCKING CAN',80000);
 
 INSERT INTO Trailer (name,link) VALUES ('DECESION CITY','//www.youtube.com/embed/OktzRuxlUa8'),('DESTINY','//www.youtube.com/embed/clRpcIHpmoY')
-,('ASSASINS CREED','//www.youtube.com/embed/ZeWSedqvxSg');
+,('ASSASINS CREED','//www.youtube.com/embed/ZeWSedqvxSg'),('HALO 5','//www.youtube.com/embed/Ijw3N676yWY')
+,('ANTICAPATED GAMES 2015','//www.youtube.com/embed/51qhTzYL0PU');

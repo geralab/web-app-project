@@ -11,12 +11,14 @@
 			<li><a href = "statistics">GLOBAL STATISTICS</a></li>
 			<li><a href = "trailers.php">TRAILERS</a></li>
 			<li><a href = "downloads">DOWNLOADS</a></li>
-			<li><a href = "register">REGISTER</a></li>
+			<li><a href = "register.php">REGISTER</a></li>
 			<li><a href = "login.php">LOGIN</a><li>
 		</ul>
 		<div class = "normal"></div>
 			<div><p class = "gold"> BLAPPO'S HOME</p></div>
 		<?php
+			session_start();
+		    echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);
 			$dbUser = 'geralab';
