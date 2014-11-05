@@ -12,7 +12,7 @@
 		<br>
 		<br>
 <?php
-		
+		session_start();
 	    $direct = $_GET["direct"];
 		$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 	    $dbPassword = trim($fileText);
@@ -26,8 +26,16 @@
 			exit();
 		}
 		$query = "Select * From Game Where gameId = '".$direct."';";
+	
 		$result = $database->query($query);
 	
+		if($_SESSION['loggedIn'] == 1)
+		{
+			$userName = $_SESSION['user'];
+			$gameId = $direct;
+			$query2 = "Insert Into GamesPlayed(userName,gameId) Values ('$userName','$gameId');";
+			$result2 = $database->query($query2);
+	    }
 			if (!is_object($result))
 			{
 

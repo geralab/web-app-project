@@ -52,7 +52,8 @@
 						$description = $row['description'];
 						$likes = $row['likes'];
 						echo '<div>';
-						echo "<div class = \"descript\"><p><br><br>$description<br> NUMBER OF LIKES: $likes</p></div>";
+						echo "<div class = \"descript\"><p><br><br>$description<br> 
+						NUMBER OF LIKES: $likes</p><br><input class = \"button\"  name = \"like\" value=\"LIKE\"></div>";
 						echo '<a href = "direct.php?direct='.$gameId.'"><img src = "'.$pic.'"></a>';
 						echo "</div><br/>";
 						$row = $result->fetch_array(MYSQLI_ASSOC);
@@ -64,5 +65,17 @@
 				
 		
 		?>
+		<script>
+		
+				function like(query)
+				{
+					var httpRequest = new XMLHttpRequest();
+					var url = "query.php?query=" + query;
+					httpRequest.open("GET", url, false);
+					httpRequest.send(null);
+					return httpRequest.responseText;
+				}
+			
+		</script>
 	</body>
 </html>
