@@ -18,7 +18,11 @@
 			<div><p class = "gold"> BLAPPO'S HOME</p></div>
 		<?php
 			session_start();
-		    echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
+			if($_SESSION['loggedIn'] == 1)
+			{
+				echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
+			}
+	
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);
 			$dbUser = 'geralab';

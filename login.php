@@ -12,7 +12,9 @@
 		</ul>
 <?php
 		session_start();
-		$_SESSION['loggedIn'] = 0;
+		$_SESSION['loggedIn'] = '';
+		$_SESSION['user'] = '';
+		$_SESSION['password'] = '';
 		$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 	    $dbPassword = trim($fileText);
 		$dbUser = 'geralab';
