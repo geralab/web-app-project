@@ -66,7 +66,7 @@
 						echo '<tr>';
 						foreach ($row as $cell) 
 						{
-							echo '<td>' . $cell . '</th>';
+							echo '<td><a href = "direct.php?direct='.$cell . '">'.$cell.'</a></td>';
 						}
 						echo '</tr>';
 						$row = $result->fetch_array(MYSQLI_ASSOC);

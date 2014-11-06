@@ -5,6 +5,7 @@ CREATE TABLE Game (fileName VARCHAR(100),pic VARCHAR(100), gameId VARCHAR(100), 
 ,likes INT, PRIMARY KEY(fileName,pic,gameId));
 
 CREATE TABLE Trailer (name VARCHAR(100), link VARCHAR(3000));
+CREATE TABLE SiteVisits (number INT, PRIMARY KEY(number));
 CREATE TABLE GamesPlayed(userName VARCHAR(100), gameId VARCHAR(100), PRIMARY KEY(userName,gameId));
 CREATE TABLE HiScore(userName VARCHAR(100), gameId VARCHAR(100),score INT, PRIMARY KEY(userName,gameId));
 CREATE TABLE Likes(userName VARCHAR(100), gameId VARCHAR(100), PRIMARY KEY(userName,gameId));

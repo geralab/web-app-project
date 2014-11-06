@@ -492,8 +492,12 @@ selection.normal
 	margin-bottom:100px;
 }
 	
-a:link {color:#0000FF; text-decoration:none;}
-a:visited {color:#007700; text-decoration:none;}
-a:hover {color:#ff0000; text-decoration:underline;}
-a:active {text-decoration:underline;}
+a
+{
+	font-family:impact;
+	color:white;
+	text-decoration:none;
+}
+a:hover {color:#ffa500;}
+
 
