@@ -33,8 +33,8 @@
 		    $passAndSalt = $password . $salt;
 			$passHash = hash('sha256', $passAndSalt);
 			//to here
-			$query = "INSERT INTO Gamer (userName,email, salt, passwordHash) VALUES
-	('$userName','$email', '$salt', '$passHash');";
+			$query = "INSERT INTO Gamer (userName,email, salt, passwordHash,admin) VALUES
+	('$userName','$email', '$salt', '$passHash',0);";
 			$result = $database->query($query);
 		}
 		echo '<div class = "login"><form class = "login" id="registerForm" name="loginForm" action="register.php" method="POST">', "\n";

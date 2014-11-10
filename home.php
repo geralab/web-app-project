@@ -67,13 +67,12 @@
 		?>
 		<script>
 		
-				function like(query)
+				function like(ascertain)
 				{
 					var httpRequest = new XMLHttpRequest();
-					var url = "query.php?query=" + query;
+					var url = "ascertain.php?ascertain=" + ascertain;
 					httpRequest.open("GET", url, false);
 					httpRequest.send(null);
-					return httpRequest.responseText;
 				}
 			
 		</script>

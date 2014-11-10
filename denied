@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style2.css">
+  <title>ACCESS DENIED</title>
+</head>
+<body>
+<h1 class = "title"> ACCESS DENIED </h1>
+		<ul id="navbar">
+		    <li><a href = "home.php">HOME</a></li>
+		</ul>
+</body>
+</html>

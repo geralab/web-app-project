@@ -40,9 +40,7 @@
 		function printTable($query,$database)
 		{
 			$result = $database->query($query);
-			
 			echo "<div>\n";
-		
 			if (!is_object($result))
 			{
 			

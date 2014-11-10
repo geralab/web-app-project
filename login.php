@@ -12,6 +12,7 @@
 		</ul>
 <?php
 		session_start();
+		$_SESSION['admin'] = '';
 		$_SESSION['loggedIn'] = '';
 		$_SESSION['user'] = '';
 		$_SESSION['password'] = '';
@@ -36,13 +37,22 @@
 			$dbHash = getInfo($query,'passwordHash',$database);
 		    $passAndSalt = $password . $salt;
 			$passHash = hash('sha256', $passAndSalt);
+			$admin = getInfo($query,'admin',$database);
 			//to here
 			if($dbHash == $passHash)
 			{
 				$_SESSION['user'] = $user;
 				$_SESSION['password'] = $password;
 				$_SESSION['loggedIn']  = 1;
-				header('Location:profile.php');
+				if($admin == 1)
+				{
+					$_SESSION['admin'] = 1;
+					header('Location:admin.php');
+				}
+				else
+				{
+					header('Location:profile.php');
+				}
 			}
 			else
 			{
