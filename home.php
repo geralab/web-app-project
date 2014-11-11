@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> BLAPPO'S  </title>
+		<title> Lees A Bitch </title>
 		<link rel="stylesheet" type="text/css" href="gstyle.css">
 	</head>
 	<body>
