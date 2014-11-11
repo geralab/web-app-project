@@ -7,8 +7,10 @@ body
 	float:center;
 
 }
-img
+img.display
 {
+	display:block;
+    margin:auto;
 	width:600px;
 	height:600px;
 }
@@ -37,6 +39,46 @@ form.login
 
 }
 
+form.search
+{
+color:#FFFFFF;
+   background:#111; 
+   width:auto;
+height:auto;
+  float:right;
+  margin:30px auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+p.center
+{
+   
+               /* 2 */                       /* 3 */
+  
+	
+}
+
+div.box
+{
+
+  color:#0000FF;
+  	background-image: url("metal.jpg");
+	background-size: 70% 100%;
+    background-repeat: no-repeat;
+	background-position: center;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+
+}
+div.right
+{
+	float:right;
+}
 input
 {
 	font-family:impact;
@@ -219,17 +261,21 @@ div.descript
 	font-weight:bold;
 	font-size: 18px;
 	color: #FFFFFF;
-	padding: 10px 8px;
 	/*background-color: #0000FF;*/
-	background-image: url("message.png");
-	background-size: 630px 300px;
+	background-image: url("folder_lock.png");
+
     background-repeat: no-repeat;
-	float:right;
-	width:630px;
-    height:300px;
+	background-position:center;
 	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
+	height:550px;
+	 background-position: center;
+  /* is this supported by IE8? I don't know */
+  background-size: cover;
+
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+  width: 50%
 }
 label {
 font-family:impact;
@@ -246,6 +292,8 @@ h1.title
 color:white;
 text-align:left;
 font-family:impact;
+width:auto;
+height:auto;
 }
 .d {
     width: 300px;
