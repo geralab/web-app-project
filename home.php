@@ -1,9 +1,7 @@
 <?php
 echo '<!DOCTYPE html>';
 echo '<html>';
-	echo '<div>';
 		require 'menu.php';	
-	echo '</div>';
 	echo '<body>';
 		echo '<div class = "normal"></div>';
 			echo '<br><br><div><h3 class = "w"> BLAPPO\'S HOME</h3></div>';
