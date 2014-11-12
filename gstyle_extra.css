@@ -27,8 +27,8 @@ div.center
 form.login
 {
 
-   color:#FFFFFF;
-   background:#111; 
+  color:#FFFFFF;
+  background:#111; 
   float:left;
   margin:30px auto;
   border-radius:0.4em;
@@ -41,10 +41,10 @@ form.login
 
 form.search
 {
-color:#FFFFFF;
-   background:#111; 
-   width:auto;
-height:auto;
+  color:#FFFFFF;
+  background:#111; 
+  width:auto;
+  height:auto;
   float:right;
   margin:30px auto;
   border-radius:0.4em;
