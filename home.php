@@ -1,3 +1,4 @@
+<?php
 echo '<!DOCTYPE html>';
 echo '<html>';
 	echo '<head>';
