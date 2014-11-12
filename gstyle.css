@@ -17,9 +17,8 @@ img.display
 form.login
 {
 
-  color:#FFFFFF;
   background:#111; 
-  float:left;
+  float:center;
   margin:30px auto;
   border-radius:0.4em;
   border:1px solid #191919;
@@ -27,4 +26,166 @@ form.login
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
+}
+
+/*form.search
+{
+  background:#111; 
+  width:auto;
+  height:auto;
+  float:center;
+  margin:30px auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}*/
+
+div.box
+{
+
+  color:#0000FF;
+  background-image: url("metal.jpg");
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius:0.4em;
+  border:0px solid #191919; /* div line */
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+
+}
+
+input
+{
+
+  font-family:impact;
+  min-width: 96px;
+  line-height: 46px;
+  padding: 0 24px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px #545454;
+  background-color: #545454;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 4px;
+  /*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));*/
+  
+}
+
+textarea
+{
+  color:#ffffff;
+  font-size:20px;
+  background:#545454; 
+  float:left;
+  width:900px;
+  height:300px;
+  overflow:auto;
+  font-weight:bold;
+  font-style:italic;
+  font-family:american typewriter;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:scroll;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+#navbar 
+{
+	width: 100%;
+	float: left; /* causes bar to take up full width */
+	margin: 10px 0 10px 0; /* top and bottom spacing */
+	padding: 2.5px;
+	list-style: none;
+	/*background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(82,82,82)), color-stop(1, rgb(125,124,125))); 
+	*/ 
+	font-family:impact;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px #154c86;
+  background-color: #247edd;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #1c65b2 #18589c #18589c;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	/*border-bottom: 2px solid white; 
+	border-top: 2px solid white; 
+	border-left: 2px solid white;
+	border-right: 2px solid white;*/
+}
+#navbar li 
+{
+	font-family:impact;
+	float: left; 
+}
+#navbar li a 
+{
+	display: block;
+	padding: 6px 10px; /* vertical and horizontal padding */
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	/*border-right: 2px solid white;	*/
+	
+}
+#navbar li a:hover 
+{
+	color: #ffa500;
+	background-color: #ffffff; 
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+.text:hover
+{
+  color: #ffa500;
+  background-color: #ffffff;
+}
+
+.button
+{
+  padding: 10px 15px 11px !important;
+  background:#545454;
+  /*background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
+  -webkit-box-shadow:#000 0 1px 2px;*/
+  font-size: 18px !important;
+  background-color: #545454;
+  height:25px;
+  /*text-shadow: 1px 1px #000000;*/
+  color: #ffffff;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  font-family:impact;
+  /*border: 1px solid #000000;*/
+  cursor: pointer;
+  /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;*/
+}
+
+.button:hover
+{
+	color: #ffa500;
+	background-color: #ffffff;
 }
