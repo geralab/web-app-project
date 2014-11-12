@@ -152,36 +152,29 @@ textarea
 	background-color: #ffffff; 
 }
 
-input[type="text"] {
+/*input[type="text"] {
     height: 25px;
-}
-
-.text:hover
-{
-  color: #ffa500;
-  background-color: #ffffff;
-}
+}*/
 
 .button
 {
   padding: 10px 15px 11px !important;
   background:#545454;
-  /*background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
-  -webkit-box-shadow:#000 0 1px 2px;*/
+  background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
+  -webkit-box-shadow:#000 0 1px 2px;
   font-size: 18px !important;
   background-color: #545454;
-  height:25px;
-  /*text-shadow: 1px 1px #000000;*/
+  text-shadow: 1px 1px #000000;*/
   color: #ffffff;
   border-radius: 9px;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
   font-family:impact;
-  /*border: 1px solid #000000;*/
+  border: 1px solid #000000;
   cursor: pointer;
-  /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;*/
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 .button:hover
