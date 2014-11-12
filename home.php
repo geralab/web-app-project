@@ -1,25 +1,10 @@
 <?php
 echo '<!DOCTYPE html>';
 echo '<html>';
-	echo '<head>';
-		echo '<title> BLAPPO\'S  </title>';
-		echo '<link rel="stylesheet" type="text/css" href="gstyle.css">';
-	echo '</head>';
+	echo '<div>';
+		require 'menu.php';	
+	echo '</div>';
 	echo '<body>';
-		echo '<div><h1 class = "title"> BLAPPO\'s </h1>';
-		echo '<ul id="navbar">';
-			echo '<li><a href = "profile.php">PROFILE</a></li>';
-			echo '<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>';
-			echo '<li><a href = "trailers.php">TRAILERS</a></li>';
-			echo '<li><a href = "downloads.php">DOWNLOADS</a></li>';
-			echo '<li><a href = "register.php">REGISTER</a></li>';
-			echo '<li><a href = "login.php">LOGIN</a><li>';
-            echo '<li><form class = "search" id="searchForm" name="search" action="home.php" method="POST">';
-    echo '<input type="text" name="search">';
-    echo '<input class = "button" type="submit" value="SEARCH">';
-    echo '</form>';
-    echo '</li></ul>';
-    echo '</div>';
 		echo '<div class = "normal"></div>';
 			echo '<br><br><div><h3 class = "w"> BLAPPO\'S HOME</h3></div>';
 		

@@ -11,5 +11,9 @@ echo '<ul id="navbar">
 <li><a href = "downloads.php">DOWNLOADS</a></li>
 <li><a href = "register.php">REGISTER</a></li>
 <li><a href = "login.php">LOGIN</a><li>
-</ul>';
+<li><form class = "search" id="searchForm" name="search" action="home.php" method="POST">
+<input type="text" name="search">
+<input class = "button" type="submit" value="SEARCH">
+</form>
+</li></ul>';
 ?>
