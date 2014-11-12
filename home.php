@@ -7,10 +7,6 @@ echo '<html>';
 	echo '</head>';
 	echo '<body>';
 		echo '<div><h1 class = "title"> BLAPPO\'s </h1>';
-		echo '<div class = "right"><div class = "search"><form class = "login" id="searchForm" name="search" action="home.php" method="POST">';
-		echo '<input type="textfield" name="search">';
-		echo '<input class = "button" type="submit" value="SEARCH">';
-		echo '</form></div><br></div></div>';
 		echo '<ul id="navbar">';
 			echo '<li><a href = "profile.php">PROFILE</a></li>';
 			echo '<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>';
@@ -18,15 +14,23 @@ echo '<html>';
 			echo '<li><a href = "downloads.php">DOWNLOADS</a></li>';
 			echo '<li><a href = "register.php">REGISTER</a></li>';
 			echo '<li><a href = "login.php">LOGIN</a><li>';
-		echo '</ul><br><br><br>';
+            echo '<li><form class = "search" id="searchForm" name="search" action="home.php" method="POST">';
+    echo '<input type="text" name="search">';
+    echo '<input class = "button" type="submit" value="SEARCH">';
+    echo '</form>';
+    echo '</li></ul>';
+    echo '</div>';
 		echo '<div class = "normal"></div>';
-			echo '<br><br><div><p class = "gold"> BLAPPO\'S HOME</p></div>';
+			echo '<br><br><div><h3 class = "w"> BLAPPO\'S HOME</h3></div>';
 		
 			session_start();
-			if($_SESSION['loggedIn'] == 1)
-			{
-				echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
-			}
+            if(array_key_exists('loggedIn', $_SESSION))
+            {
+                    if($_SESSION['loggedIn'] == 1)
+                    {
+                        echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
+                    }
+            }
 	
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);
