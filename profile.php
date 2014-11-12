@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Quazzar </title>
-		<link rel="stylesheet" type="text/css" href="gstyle.css">
-	</head>
+	<?php
+		require 'menu.php';
+	?>
 	<body>
 	<?php
 	    session_start();
@@ -12,9 +11,6 @@
 			header('Location:login.php');
 		}
 		echo '<h1 class = "title">'.$_SESSION['user'].'\'s PROFILE PAGE</h1>';
-		echo '<ul id="navbar">';
-			require 'menu.php';
-		echo '</ul>';
 		echo '<div class = "normal"></div>';
 			echo '<div><p class = "gold">'.$_SESSION['user'].'\'s PROFILE</p></div>';
 			
