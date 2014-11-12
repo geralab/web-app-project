@@ -1,23 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<title> Lees A Bitch </title>
-		<link rel="stylesheet" type="text/css" href="gstyle.css">
-	</head>
-	<body>
-		<h1 class = "title"> BLAPPO's </h1>
-		<ul id="navbar">
-			<li><a href = "profile.php">PROFILE</a></li>
-			<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>
-			<li><a href = "trailers.php">TRAILERS</a></li>
-			<li><a href = "downloads.php">DOWNLOADS</a></li>
-			<li><a href = "register.php">REGISTER</a></li>
-			<li><a href = "login.php">LOGIN</a><li>
-		</ul>
-		<div class = "normal"></div>
-			<div><p class = "gold"> BLAPPO'S HOME</p></div>
-<?php
 echo '<!DOCTYPE html>';
 echo '<html>';
 	echo '<head>';
