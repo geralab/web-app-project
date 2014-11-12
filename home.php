@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,8 +17,6 @@
 		</ul>
 		<div class = "normal"></div>
 			<div><p class = "gold"> BLAPPO'S HOME</p></div>
-		<?php
-=======
 <?php
 echo '<!DOCTYPE html>';
 echo '<html>';
@@ -43,7 +41,6 @@ echo '<html>';
 		echo '<div class = "normal"></div>';
 			echo '<br><br><div><p class = "gold"> BLAPPO\'S HOME</p></div>';
 		
->>>>>>> Stashed changes
 			session_start();
 			if($_SESSION['loggedIn'] == 1)
 			{
