@@ -45,7 +45,7 @@ form.login
 div.box
 {
 
-  color:#0000FF;
+  color:#000000;
   background-image: url("metal.jpg");
   background-size: 70% 100%;
   background-repeat: no-repeat;
@@ -58,11 +58,10 @@ div.box
 
 input
 {
-
   font-family:impact;
-  min-width: 96px;
-  line-height: 46px;
-  padding: 0 24px;
+  width:50%;
+  display: block;
+  padding: 6px 30px;
   font-size: 18px;
   color: white;
   text-align: center;
@@ -73,6 +72,7 @@ input
   border: 1px solid;
   border-color: #000000;
   border-radius: 4px;
+  float:left;
   /*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
@@ -103,7 +103,9 @@ textarea
 
 #navbar 
 {
-	width: 100%;
+    margin:0;
+    padding:0;
+	width: 80%;
 	float: left; /* causes bar to take up full width */
 	margin: 10px 0 10px 0; /* top and bottom spacing */
 	padding: 2.5px;
@@ -134,11 +136,11 @@ textarea
 #navbar li 
 {
 	font-family:impact;
-	float: left; 
+    display:inline;
 }
 #navbar li a 
 {
-	display: block;
+	display: inline-block;
 	padding: 6px 10px; /* vertical and horizontal padding */
 	text-decoration: none;
 	font-weight: bold;
@@ -153,18 +155,41 @@ textarea
 }
 
 /*input[type="text"] {
+<<<<<<< Updated upstream
     height: 25px;
+}
+
+    height: 25%;
 }*/
+
+.text:hover
+{
+  color: #ffa500;
+  background-color: #ffffff;
+}
+
 
 .button
 {
-  padding: 10px 15px 11px !important;
+    display: block;
+    padding: 6px 10px;
+    float:right;
+  
   background:#545454;
   background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
   -webkit-box-shadow:#000 0 1px 2px;
   font-size: 18px !important;
   background-color: #545454;
-  text-shadow: 1px 1px #000000;*/
+  text-shadow: 1px 1px #000000;
+
+  /*background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
+  -webkit-box-shadow:#000 0 1px 2px;*/
+  font-size: 15px;
+  background-color: #545454;
+  height:25%;
+  width:100px;
+  /*text-shadow: 1px 1px #000000;*/
+
   color: #ffffff;
   border-radius: 9px;
   -moz-border-radius: 9px;

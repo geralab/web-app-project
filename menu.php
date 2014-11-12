@@ -3,7 +3,7 @@ echo '<head><title> Quazzar </title>
 <link rel="stylesheet" type="text/css" href="gstyle.css"></head>';
 echo '<img src="Quazzar_Banner.png" alt="Quazzar_Banner">
 ';
-echo '<ul id="navbar"> 
+echo '<center><ul id="navbar">
 <li><a href = "home.php">HOME</a></li>
 <li><a href = "profile.php">PROFILE</a></li>
 <li><a href = "statistics.php">LEADERBOARDS</a></li>
@@ -15,5 +15,5 @@ echo '<ul id="navbar">
 <input type="text" name="search">
 <input class = "button" type="submit" value="SEARCH">
 </form>
-</li></ul>';
+</li></ul></center>';
 ?>
