@@ -1,8 +1,8 @@
 <?php
 echo '<!DOCTYPE html>';
-echo '<html><center>';
+echo '<html>';
 		require 'menu.php';	
-	echo '<body></center>';
+	echo '<body>';
 		echo '<div class = "normal"></div>';
 			echo '<br><br><div><h3 class = "w"> BLAPPO\'S HOME</h3></div>';
 		

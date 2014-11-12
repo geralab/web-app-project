@@ -106,7 +106,7 @@ textarea
     margin:0;
     padding:0;
 	width: 80%;
-	float: left; /* causes bar to take up full width */
+    /* causes bar to take up full width */
 	margin: 10px 0 10px 0; /* top and bottom spacing */
 	padding: 2.5px;
 	list-style: none;
