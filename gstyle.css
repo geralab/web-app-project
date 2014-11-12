@@ -13,3 +13,18 @@ img.display
 	width:600px;
 	height:600px;
 }
+
+form.login
+{
+
+  color:#FFFFFF;
+  background:#111; 
+  float:left;
+  margin:30px auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+
+}
