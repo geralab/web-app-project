@@ -6,9 +6,9 @@
 </head>
 <body>
 <h1 class = "title">GAME PAGE</h1>
-		<ul id="navbar">
+		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
-		</ul>
+		</ul></center>
 		<br>
 		<br>
 <?php

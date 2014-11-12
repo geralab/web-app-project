@@ -6,9 +6,9 @@
 </head>
 <body>
 <h1 class = "title">REGISTER</h1>
-		<ul id="navbar">
+		<center><ul id="navbar">
 		    <li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>
-		</ul>
+		</ul></center>
 <?php
 		$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 	    $dbPassword = trim($fileText);
@@ -37,7 +37,7 @@
 	('$userName','$email', '$salt', '$passHash',0);";
 			$result = $database->query($query);
 		}
-		echo '<div class = "login"><form class = "login" id="registerForm" name="loginForm" action="register.php" method="POST">', "\n";
+		echo '<center><div class = "login"><form class = "login" id="registerForm" name="loginForm" action="register.php" method="POST">', "\n";
 		echo '<label for="userName">Username:</label>';
 		echo '<input type="textfield" name="userName"><br/>', "\n";
 		echo '<label for="password">Password:</label>';
@@ -47,7 +47,7 @@
 		echo '<br/>', "\n";
 		echo '<input class = "button" type="submit" value="REGISTER">', "\n";
 		echo '</form><br/>', "\n";
-		echo '</div>';
+		echo '</div></center>';
 		
 	function getInfo($query,$col,$database)
 	{

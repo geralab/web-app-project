@@ -15,13 +15,13 @@
 		{
 			echo '<h1 class = "title">GLOBAL STATISTICS PAGE</h1>';
 		}
-		echo '<ul id="navbar">';
+		echo '<center><ul id="navbar">';
 			echo'<li><a href = "home.php">HOME</a></li>';
 			echo '<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>';
 			echo '<li><a href = "downloads.php">DOWNLOADS</a></li>';
 			echo '<li><a href = "register.php">REGISTER</a></li>';
 			echo '<li><a href = "login.php">LOGIN</a><li>';
-		echo '</ul>';
+		echo '</ul></center>';
 		echo '<div class = "normal"></div>';
 		if($_SESSION['loggedIn'] == 1)
 		{

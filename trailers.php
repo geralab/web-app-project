@@ -6,14 +6,14 @@
 	</head>
 	<body>
 		<h1 class = "title"> BLAPPO's TRAILERS</h1>
-		<ul id="navbar">
+		<center><ul id="navbar">
 			<li><a href = "home.php">HOME</a></li>
 			<li><a href = "profile.php">PROFILE</a></li>
 			<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>
 			<li><a href = "downloads.php">DOWNLOADS</a></li>
 			<li><a href = "register.php">REGISTER</a></li>
 			<li><a href = "login.php">LOGIN</a><li>
-		</ul>
+		</ul></center>
 		<div class = "normal"></div>
 			<div><p class = "gold"> TRAILERS</p></div>
 		<?php

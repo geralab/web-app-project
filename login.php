@@ -6,10 +6,10 @@
 </head>
 <body>
 <h1 class = "title">LOGIN</h1>
-		<ul id="navbar">
+		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
 			<li><a href = "register.php">REGISTER</a></li>
-		</ul>
+		</ul></center>
 <?php
 		session_start();
 		$_SESSION['admin'] = '';
@@ -60,7 +60,7 @@
 							</pre></h4></div>';
 			}
 		}
-		echo '<div class = "login"><form class = "login" id="loginForm" name="loginForm" action="login.php" method="POST">', "\n";
+		echo '<center><div class = "login"><form class = "login" id="loginForm" name="loginForm" action="login.php" method="POST">', "\n";
 		echo '<label for="user">Username:</label>';
 		echo '<input type="textfield" name="user"><br/>', "\n";
 		echo '<label for="password">Password:</label>';
@@ -68,7 +68,7 @@
 		echo '<br/>', "\n";
 		echo '<input class = "button" type="submit" value="LOGIN">', "\n";
 		echo '</form><br/>', "\n";
-		echo '</div>';
+		echo '</div></center>';
 		
 	function getInfo($query,$col,$database)
 	{

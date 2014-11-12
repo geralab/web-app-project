@@ -6,10 +6,10 @@
 </head>
 <body>
 <h1 class = "title"> ADMINISTRATOR </h1>
-		<ul id="navbar">
+		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
 			<li><a href = "login.php">LOGIN</a></li>
-		</ul>
+		</ul><center>
 </body>
 
 <div id = "adminQ" name = "adminQ" class = "normal"><form class = "login" id="queryForm" name="queryForm" action="admin.php" method="POST">

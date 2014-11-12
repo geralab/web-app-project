@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<?php
+<?php
+echo '<!DOCTYPE html>';
+echo '<html>';
+
 		require 'menu.php';
-	?>
-	<body>
-	<?php
+	
+	echo '<body>';
 	    session_start();
 	    if($_SESSION['loggedIn'] != 1)
 		{
