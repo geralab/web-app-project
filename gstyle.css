@@ -1,3 +1,17 @@
+h1.title
+{
+    color:white;
+    text-align:left;
+    font-family:impact;
+    width:auto;
+    height:auto;
+}
+h3.w
+{
+    color:white;
+    text-align:center;
+    font-family:impact;
+}
 
 body
 {
@@ -12,19 +26,24 @@ img.display
     margin:auto;
 	width:600px;
 	height:600px;
+    border: 8px solid;
+    border-color: #000000;
+    border-radius: 70px;
 }
 
 form.login
 {
 
-  background:#111; 
-  float:center;
+  background:#111;
   margin:30px auto;
   border-radius:0.4em;
   border:1px solid #191919;
   overflow:hidden;
   position:relative;
+  background-position: center;
+  width:35%;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  color:white;
 
 }
 
@@ -41,7 +60,37 @@ form.login
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 }*/
-
+tr:hover
+{
+    color: #ffa500;
+    background-color: #ffffff;
+}
+tr
+{
+    
+    
+    font-family:impact;
+    
+    min-width: 96px;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-color: #247edd;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
 div.box
 {
 
@@ -207,3 +256,10 @@ textarea
 	color: #ffa500;
 	background-color: #ffffff;
 }
+a
+{
+    font-family:impact;
+    color:white;
+    text-decoration:none;
+}
+a:hover {color:#ffa500;}

@@ -4,7 +4,7 @@ echo '<html>';
 		require 'menu.php';	
 	echo '<body>';
 		echo '<div class = "normal"></div>';
-			echo '<br><br><div><h3 class = "w"> BLAPPO\'S HOME</h3></div>';
+			echo '<div><h1 class = "title"> BLAPPO\'S HOME</h1></div>';
 		
 			session_start();
             if(array_key_exists('loggedIn', $_SESSION))
