@@ -1,3 +1,10 @@
+
+
+iframe.game
+{
+    width:1000px;
+    height:1000px;
+}
 h1.title
 {
     color:white;
@@ -5,12 +12,14 @@ h1.title
     font-family:impact;
     width:auto;
     height:auto;
+    text-align:center;
 }
 h3.w
 {
     color:white;
     text-align:center;
     font-family:impact;
+    text-align:center;
 }
 
 body
@@ -18,6 +27,11 @@ body
 	background-color:#000000;
 	color:#000000;
 	float:center;
+}
+div.sub
+{
+    width:35%;
+    height:70%;
 }
 
 img.display
@@ -33,7 +47,6 @@ img.display
 
 form.login
 {
-
   background:#111;
   margin:30px auto;
   border-radius:0.4em;
@@ -44,7 +57,9 @@ form.login
   width:35%;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
   color:white;
-
+  font-family:impact;
+  font-weight:bold;
+  font-size:25px;
 }
 
 /*form.search

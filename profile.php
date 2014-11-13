@@ -32,7 +32,7 @@ echo '<html>';
 		function printTable($query,$database)
 		{
 			$result = $database->query($query);
-			echo "<div>\n";
+			echo "<center><div>\n";
 			if (!is_object($result))
 			{
 			
@@ -63,7 +63,7 @@ echo '<html>';
 					}
 				}
 				echo "</table>\n";
-				echo "</div>";
+				echo "</div></center>";
 			} 
 		 }		
 		?>

@@ -11,6 +11,7 @@
 		</ul></center>
 		<br>
 		<br>
+
 <?php
 		session_start();
 	    $direct = $_GET["direct"];
@@ -49,20 +50,14 @@
 					$fileName = $row['fileName'];
 					//echo '<div class = "contain">';
 					echo "<center><h1>$gameId</h1>";
-					echo '<object classid="game:1" width="1000" height="1000">';
-					echo' <param name="movie" value="'.$fileName.'" />';
-					echo '<object type="application/x-shockwave-flash" data="'.$fileName.'" width="1000" height="1000">';
-					echo '<!--<![endif]-->';
-					echo '<p>Alternative content</p>';
-					echo '<!--[if !IE]>-->';
-					echo '</object>';
-					echo '</object></center>';
+					echo '<iframe class="game" src = "'.$fileName.'">';
 					//echo '</div>';
 					echo '<br><br>';
 				}
-				echo "<br/>";
+				echo "<br/></center>";
 			} 
 ?>
+
 </body>
 </html>
 

@@ -4,7 +4,7 @@ echo '<html>';
 		require 'menu.php';	
 	echo '<body>';
 		echo '<div class = "normal"></div>';
-			echo '<div><h1 class = "title"> BLAPPO\'S HOME</h1></div>';
+			echo '<div><h1 class = "title"> QUAZZAR HOME</h1></div>';
 		
 			session_start();
             if(array_key_exists('loggedIn', $_SESSION))
@@ -43,7 +43,7 @@ echo '<html>';
 							$likes = $row['likes'];
 							echo '<center><div class = "box">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
-							echo '<a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a>';
+							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a></div>';
 							echo "<div class = \"descript\"><span><p class = \"center\">$description
 							NUMBER OF LIKES: $likes</p></span><br><input class = \"button\"  name = \"like\" value=\"LIKE\"></div>";
 							echo "</div></center><br/>";
@@ -79,7 +79,7 @@ echo '<html>';
 							$likes = $row['likes'];
 							echo '<center><div class = "box">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
-							echo '<a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a>';
+							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a></div>';
 							echo "<div class = \"descript\"><span><p class = \"center\">$description
 							NUMBER OF LIKES: $likes</p></span><br><input class = \"button\"  name = \"like\" value=\"LIKE\"></div>";
 							echo "</div></center><br/>";
