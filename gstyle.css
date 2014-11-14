@@ -1,10 +1,11 @@
 
-
+/*Determins How Games are displayed*/
 iframe.game
 {
     width:1000px;
     height:1000px;
 }
+/*For Nice looking titles of things*/
 h1.title
 {
     color:white;
@@ -14,6 +15,7 @@ h1.title
     height:auto;
     text-align:center;
 }
+/*For smaller titles*/
 h3.w
 {
     color:white;
@@ -28,12 +30,13 @@ body
 	color:#000000;
 	float:center;
 }
+/*Controls How Much Space subdivsion takes up*/
 div.sub
 {
     width:50%;
     height:70%;
 }
-
+/*Determines how images of games displayed*/
 img.display
 {
 	display:block;
@@ -45,6 +48,7 @@ img.display
     border-radius: 70px;
 }
 
+/*BUILDS LOGIN AND REGISTER FORMS*/
 form.login
 {
   background:#111;
@@ -75,11 +79,14 @@ form.login
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 }*/
+
+/*HIGHLIGHT TABLE CELL ON HOVER*/
 tr:hover
 {
     color: #ffa500;
     background-color: #ffffff;
 }
+/*FORNAT TABLE CELLS*/
 tr
 {
     
@@ -106,6 +113,7 @@ tr
     background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
+/*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC*/
 div.box
 {
 
@@ -120,6 +128,7 @@ div.box
 
 }
 
+/*FORMAT ALL INPUTS*/
 input
 {
     
@@ -145,7 +154,7 @@ input
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));*/
   
 }
-
+/*FORMAT BIG TEXT AREA*/
 textarea
 {
   color:#ffffff;
@@ -164,7 +173,7 @@ textarea
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 }
-
+/* Format Navigation Bar*/
 #navbar 
 {
     margin:0;
@@ -197,11 +206,13 @@ textarea
 	border-left: 2px solid white;
 	border-right: 2px solid white;*/
 }
+/*Format list element of navagation bar*/
 #navbar li 
 {
 	font-family:impact;
     display:inline;
 }
+/*LIST AND A TAG*/
 #navbar li a 
 {
 	display: inline-block;
@@ -212,6 +223,7 @@ textarea
 	/*border-right: 2px solid white;	*/
 	
 }
+/*HIGHLIGHT NAVIGATION BAR ON HOVER*/
 #navbar li a:hover 
 {
 	color: #ffa500;
@@ -231,7 +243,7 @@ textarea
   color: #ffa500;
   background-color: #ffffff;
 }
-
+/*FORMAT ALL BUTTONS*/
 
 .button
 {
@@ -265,7 +277,7 @@ textarea
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
-
+/*HIGHLIGH BUTTON ON HOVER*/
 .button:hover
 {
 	color: #ffa500;
@@ -277,4 +289,5 @@ a
     color:white;
     text-decoration:none;
 }
+/*HIGH LIGHT A TAG ON HOVER*/
 a:hover {color:#ffa500;}
