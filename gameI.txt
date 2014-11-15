@@ -18,7 +18,8 @@ INSERT INTO Game (fileName,pic,gameId,description,likes) VALUES	('n-game.swf','n
 ('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500)
 ,('nindroid.swf','nindroid.jpg','NINDROIDS','Play as a group of Ninjas on a quest to save the world',4000)
 ,('decisionCity.swf','decisionCity.png','DECISION CITY','SHOOT AND KILL AS MANY ZOMBIES AS YOU FUCKING CAN',80000)
-,('mysticforce.swf','mysticforce.jpg','MYSTIC FORCE','Save the world as a Mystic Force Power Ranger',90000);
+,('mysticforce.swf','mysticforce.jpg','MYSTIC FORCE','Save the world as a Mystic Force Power Ranger',90000),('helicoptergame.swf','helicopter-game.png','HELICOPTER GAME','Dodge treacherous obstacles in a kool helicopter!!',10000000),('hanger.swf','hanger.jpg','HANGER','Swing through obtacles without getting hurt!!!',30000),('supercar-road-trip.swf','supercar-road-trip.jpg','SUPERCAR-ROAD-TRIP','Ride super fast cars through exhilerating maps',900000),('electricman2.swf','EM2.jpg','ELECTRICMAN 2','Fight through enemies with electric combative skills',40000),('vex2.swf','vex 2.png','VEX 2','Traverse variable maps with highly acrobatic and adept skills',30000),('ultimate-dirtbike-usa.swf','ultimate-dirt-bike-usa.jpg','ULTIMATE DIRT BIKE USA','Ride super fast dirtbikes through really kool courses',7770000);
+
 
 INSERT INTO Trailer (name,link) VALUES ('DECESION CITY','//www.youtube.com/embed/OktzRuxlUa8'),('DESTINY','//www.youtube.com/embed/clRpcIHpmoY')
 ,('ASSASINS CREED','//www.youtube.com/embed/ZeWSedqvxSg'),('HALO 5','//www.youtube.com/embed/Ijw3N676yWY')
