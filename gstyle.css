@@ -2,8 +2,8 @@
 /*Determins How Games are displayed*/
 iframe.game
 {
-    width:1000px;
-    height:1000px;
+    width:70%;
+    height:1500px;
 }
 /*For Nice looking titles of things*/
 h1.title
@@ -26,9 +26,12 @@ h3.w
 
 body
 {
+    background-image: url('bl.jpg');
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-position: center;
 	background-color:#000000;
 	color:#000000;
-	float:center;
 }
 /*Controls How Much Space subdivsion takes up*/
 div.sub
