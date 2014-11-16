@@ -23,14 +23,27 @@ h3.w
     font-family:impact;
     text-align:center;
 }
-
+div.banner
+{
+    background-image: url('wave1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:71% 100%;
+    border-radius: 20px;
+    height:100px;
+}
+img.banner
+{
+   
+}
 body
 {
     background-image: url('bl.jpg');
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 	background-color:#000000;
+    background-size:85% 100%;
 	color:#000000;
 }
 /*Controls How Much Space subdivsion takes up*/
@@ -42,10 +55,11 @@ div.sub
 /*Determines how images of games displayed*/
 img.display
 {
+    
 	display:block;
     margin:auto;
-	width:600px;
-	height:600px;
+	width:95%;
+	height:75%;
     border: 8px solid;
     border-color: #000000;
     border-radius: 70px;
@@ -53,7 +67,7 @@ img.display
 
 img.display:hover
 {
-    opacity
+    opacity:.20;
     color:#ffa500;
 }
 /*BUILDS LOGIN AND REGISTER FORMS*/
@@ -126,7 +140,7 @@ div.box
 {
 
   color:#000000;
-  background-image: url("metal.jpg");
+  background-image: url("fire2.gif");
   background-size: 70% 100%;
   background-repeat: no-repeat;
   background-position: center;
