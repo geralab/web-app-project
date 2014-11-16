@@ -4,14 +4,14 @@ echo '<html>';
 		require 'menu.php';	
 	echo '<body>';
 		echo '<div class = "normal"></div>';
-			echo '<div><h1 class = "title"> QUAZZAR HOME</h1></div>';
+			echo '<div class = "hback"><h1 class = "title"> QUAZZAR HOME</h1></div>';
 		
 			session_start();
             if(array_key_exists('loggedIn', $_SESSION))
             {
                     if($_SESSION['loggedIn'] == 1)
                     {
-                        echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1>';
+                        echo '<div class = "hback"><pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1></div>';
                     }
             }
 	

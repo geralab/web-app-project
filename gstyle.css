@@ -176,6 +176,16 @@ div.box
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
 }
+/*provides backgorund to htags*/
+div.hback
+{
+    color:#000000;
+    background-image: url("metal.jpg");
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /*FORMAT ALL INPUTS*/
 input

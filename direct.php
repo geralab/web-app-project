@@ -51,7 +51,7 @@
 					$gameId = $row['gameId'];
 					$fileName = $row['fileName'];
 					//echo '<div class = "contain">';
-					echo "<center><h1>$gameId</h1>";
+					echo "<center><div class = \"hback\"><h1>$gameId</h1></div>";
 					echo '<iframe class="game" src = "'.$fileName.'">';
 					//echo '</div>';
 					echo '<br><br>';
