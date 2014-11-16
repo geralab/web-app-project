@@ -23,6 +23,36 @@ h3.w
     font-family:impact;
     text-align:center;
 }
+/*for descriptions*/
+div.descript
+{
+    background-image: url("metal.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100%;
+    width: 50%;
+}
+.descript button
+{
+    width:100%;
+    height:15%;
+}
+.descript p
+{
+    height:70%;
+    width: 50%
+    font-family: impact;
+    font-weight:bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* Helps align text boxes For all labels*/
+label {
+    font-family:impact;
+    float: left; width: 100px; 
+    font-weight: bold;
+}
 div.banner
 {
     background-image: url('wave1.gif');
@@ -111,10 +141,7 @@ tr:hover
 /*FORNAT TABLE CELLS*/
 tr
 {
-    
-    
     font-family:impact;
-    
     min-width: 96px;
     line-height: 46px;
     padding: 0 24px;
@@ -208,22 +235,22 @@ textarea
 	/*background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(82,82,82)), color-stop(1, rgb(125,124,125))); 
 	*/ 
 	font-family:impact;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 1px #154c86;
-  background-color: #247edd;
-  background-clip: padding-box;
-  border: 1px solid;
-  border-color: #1c65b2 #18589c #18589c;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-	/*border-bottom: 2px solid white; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-color: #247edd;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	/*border-bottom: 2px solid white;
 	border-top: 2px solid white; 
 	border-left: 2px solid white;
 	border-right: 2px solid white;*/
@@ -311,5 +338,58 @@ a
     color:white;
     text-decoration:none;
 }
-/*HIGH LIGHT A TAG ON HOVER*/
+/*Makes select tag look good*/
+select
+{
+    padding: 10px 15px 11px !important;
+    background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
+    -webkit-box-shadow:#000 0 1px 2px;
+    font-size: 18px !important;
+    background-color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    color: #ffffff;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    font-family:impact;
+    border: 1px solid #000000;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+select:hover
+{
+    color: #ffa500;
+    background-color: #ffffff;
+}
+
+/*Make option tag look good*/
+option
+{
+    padding: 10px 15px 11px !important;
+    background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
+    -webkit-box-shadow:#000 0 1px 2px;
+    font-size: 18px !important;
+    background-color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    color: #ffffff;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    font-family:impact;
+    border: 1px solid #000000;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+option:hover
+{
+    color: #ffa500;
+    background-color: #ffffff;
+}
+/*HIGHLIGHT A TAG ON HOVER*/
 a:hover {color:#ffa500;}
