@@ -58,13 +58,23 @@ label {
 }
 div.banner
 {
-    background-image: url('wave1.gif');
+    font-family:impact;
+    background-image: url('q1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:71% 100%;
     border-radius: 20px;
     height:100px;
 }
+.banner h1
+{
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    font-size:50px;
+
+}
+
 img.banner
 {
    
@@ -343,35 +353,23 @@ textarea
 
 .button
 {
-    display:inline;
-    padding: 6px 10px;
-
-  
-  background:#545454;
-  background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
-  -webkit-box-shadow:#000 0 1px 2px;
-  font-size: 18px !important;
-  background-color: #545454;
-  text-shadow: 1px 1px #000000;
-
-  /*background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
-  -webkit-box-shadow:#000 0 1px 2px;*/
-  font-size: 15px;
-  background-color: #545454;
-  height:25%;
-  width:100px;
-  /*text-shadow: 1px 1px #000000;*/
-
-  color: #ffffff;
-  border-radius: 9px;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
-  font-family:impact;
-  border: 1px solid #000000;
-  cursor: pointer;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+      display:inline;
+      padding: 6px 10px;
+      background-image: url("shinyb1.png");
+      font-size: 18px !important;
+      background-color: #545454;
+      text-shadow: 1px 1px #000000;
+      font-size: 15px;
+      background-color: #545454;
+      height:25%;
+      width:100px;
+      color: #ffffff;
+      border-radius: 9px;
+      -moz-border-radius: 9px;
+      -webkit-border-radius: 9px;
+      font-family:impact;
+      border: 1px solid #000000;
+      cursor: pointer;
 }
 /*HIGHLIGH BUTTON ON HOVER*/
 .button:hover
