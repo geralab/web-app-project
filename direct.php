@@ -5,7 +5,7 @@
   <title> GAME PAGE</title>
 </head>
 <body>
-<h1 class = "title">GAME PAGE</h1>
+<center><div class = "banner"><h1 class = "title">GAME PAGE</h1></div></center>
 		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
 		</ul></center>

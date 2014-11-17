@@ -5,7 +5,7 @@
   <title> LOGIN</title>
 </head>
 <body>
-<h1 class = "title">LOGIN</h1>
+<center><div class = "banner"><h1 class = "title">LOGIN</h1></div></center>
 		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
 			<li><a href = "register.php">REGISTER</a></li>

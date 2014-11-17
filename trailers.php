@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="gstyle.css">
 	</head>
 	<body>
-		<h1 class = "title"> BLAPPO's TRAILERS</h1>
+		<center><div class = "banner"><h1 class = "title">TRAILERS</h1></div></center>
 		<center><ul id="navbar">
 			<li><a href = "home.php">HOME</a></li>
 			<li><a href = "profile.php">PROFILE</a></li>

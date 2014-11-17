@@ -7,6 +7,7 @@
 	<body>
 	<?php
 		session_start();
+        echo '<center><div class = "banner"><h1 class = "title">DOWNLOADS</h1></div></center>';
 		echo '<center><ul id="navbar">';
 			echo'<li><a href = "home.php">HOME</a></li>';
 			echo '<li><a href = "statistics.php">GLOBAL STATISTICS</a></li>';

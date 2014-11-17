@@ -32,8 +32,10 @@ div.descript
     background-image: url("metal.jpg");
     background-repeat: no-repeat;
     background-position:center;
+    border:3px solid; /* div line */
     height:100%;
     width: 50%;
+    border-radius: 20px;
 }
 .descript button
 {
@@ -183,12 +185,13 @@ div.boxEven
   color:#000000;
   background-image: url(light2.gif);
   background-repeat:no-repeat;
-  background-size: 70% 100%;
+  background-size: 100% 100%;
+  width:70%;
   border-image: url(gold1.jpg) 30 30 round;
   border-width:70%;
   background-position: center;
-  border-radius:0.4em;
-  border:0px solid #191919; /* div line */
+  border-radius:20px;
+  border:3px solid; /* div line */
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
 }
@@ -199,12 +202,13 @@ div.boxOdd
     color:#000000;
     background-image: url(light6.gif);
     background-repeat:no-repeat;
-    background-size: 70% 100%;
+    background-size: 100% 100%;
+    width:70%;
     border-image: url(gold1.jpg) 30 30 round;
     border-width:70%;
     background-position: center;
-    border-radius:0.4em;
-    border:0px solid #191919; /* div line */
+    border-radius:20px;
+    border:3px solid #191919; /* div line */
     box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
     
 }
@@ -221,20 +225,24 @@ div.boxOdd
 /*provides backgorund to htags*/
 div.hback
 {
-    background-size: 70% 100%;
+    background-size: 100% 100%;
     background-color: #eeeeee;
     background-position: center;
+    background-image: url('wave1.gif');
     width:70%;
     height:100%
     border-width:70%;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+   /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
     background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
     background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
     background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
     background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: linear-gradient(top, #eeeeee, #cccccc);
-    border: 1px solid #ccc;
-    border-bottom: 1px solid #bbb;
+    background-image: linear-gradient(top, #eeeeee, #cccccc);*/
+    /*border: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;*/
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-bottom: 1px solid;
     border-radius: 10px;
     color: #333;
 }
