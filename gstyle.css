@@ -77,7 +77,6 @@ body
     background-position: center;
 	background-color:#000000;
     background-size:85% 100%;
-	color:#000000;
 }
 /*Controls How Much Space subdivsion takes up*/
 div.sub
@@ -119,6 +118,8 @@ form.login
   font-family:impact;
   font-weight:bold;
   font-size:25px;
+  background-image: url("shinyb1.png");
+  background-size: 100% 100%;
 }
 
 /*form.search
@@ -165,28 +166,58 @@ tr
     background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
-/*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC*/
-div.box
+/*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC FOR EVENS IN HOME.php*/
+div.boxEven
 {
 
   color:#000000;
-  background-image: url("fire2.gif");
+  background-image: url(light2.gif);
+  background-repeat:no-repeat;
   background-size: 70% 100%;
-  background-repeat: no-repeat;
+  border-image: url(gold1.jpg) 30 30 round;
+  border-width:70%;
   background-position: center;
   border-radius:0.4em;
   border:0px solid #191919; /* div line */
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
 }
+/*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC FOR ODDS IN HOME.php*/
+div.boxOdd
+{
+    
+    color:#000000;
+    background-image: url(light6.gif);
+    background-repeat:no-repeat;
+    background-size: 70% 100%;
+    border-image: url(gold1.jpg) 30 30 round;
+    border-width:70%;
+    background-position: center;
+    border-radius:0.4em;
+    border:0px solid #191919; /* div line */
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    
+}
+
 /*provides backgorund to htags*/
 div.hback
 {
-    color:#000000;
-    background-image: url("wave2.gif");
-    background-size: 40% 100%;
-    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-color: #eeeeee;
     background-position: center;
+    width:70%;
+    height:100%
+    border-width:70%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: linear-gradient(top, #eeeeee, #cccccc);
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
+    border-radius: 10px;
+    color: #333;
 }
 
 
@@ -208,12 +239,10 @@ input
   border: 1px solid;
   border-color: #000000;
   border-radius: 4px;
-  /*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));*/
+  background-image: url("wave3.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
   
 }
 /*FORMAT BIG TEXT AREA*/
@@ -234,6 +263,11 @@ textarea
   overflow:scroll;
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  background-image: url("portal1.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+
 }
 /* Format Navigation Bar*/
 #navbar 
