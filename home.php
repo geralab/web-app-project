@@ -56,7 +56,7 @@ echo '<html>';
 			}
 			else
 			{
-				echo '<h1 class = "title"> SEARCH RESULTS </h1>';
+				echo '<div class = "hback"><h1 class = "title"> SEARCH RESULTS </h1></div>';
 				$search = $_POST['search'];
 				$query = "Select * From Game Where gameId Like '$search%';";
 				$result = $database->query($query);

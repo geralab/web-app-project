@@ -10,9 +10,9 @@ echo '<html>';
 		{
 			header('Location:login.php');
 		}
-		echo '<h1 class = "title">'.$_SESSION['user'].'\'s PROFILE PAGE</h1>';
+		echo '<div class = "hback"><h1 class = "title">'.$_SESSION['user'].'\'s PROFILE PAGE</h1></div>';
 		echo '<div class = "normal"></div>';
-			echo '<div><p class = "gold">'.$_SESSION['user'].'\'s PROFILE</p></div>';
+			echo '<div class = "hback"><h1 class = "title">'.$_SESSION['user'].'\'s PROFILE</h1></div>';
 			
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);

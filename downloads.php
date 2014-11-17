@@ -9,11 +9,11 @@
 		session_start();
 	    if($_SESSION['loggedIn'] == 1)
 		{
-			echo '<h1 class = "title">'.$_SESSION['user'].'\'s DOWNLOAD PAGE</h1>';
+			echo '<div class = "hback"><h1 class = "title">'.$_SESSION['user'].'\'s DOWNLOAD PAGE</h1></div>';
 		}
 		else
 		{
-			echo '<h1 class = "title">DOWNLOAD PAGE</h1>';
+			echo '<div class = "hback"><h1 class = "title">DOWNLOAD PAGE</h1></div>';
 		}
 		echo '<center><ul id="navbar">';
 			echo'<li><a href = "home.php">HOME</a></li>';

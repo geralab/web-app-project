@@ -15,7 +15,7 @@
 			<li><a href = "login.php">LOGIN</a><li>
 		</ul></center>
 		<div class = "normal"></div>
-			<div><p class = "gold"> TRAILERS</p></div>
+			<div class = "hback"><h1 class = "title"> TRAILERS</h1></div>
 		<?php
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);
