@@ -209,6 +209,15 @@ div.boxOdd
     
 }
 
+.boxEven img:hover
+{
+    opacity:.40;
+}
+.boxOdd img:hover
+{
+    opacity:.40;
+}
+
 /*provides backgorund to htags*/
 div.hback
 {
