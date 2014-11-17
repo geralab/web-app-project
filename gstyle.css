@@ -1,4 +1,7 @@
-
+/*Set Webpage to devicwidth*/
+@-ms-viewport{
+    width: device-width;
+}
 /*Determins How Games are displayed*/
 iframe.game
 {
