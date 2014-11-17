@@ -1,7 +1,7 @@
 <?php
 echo '<head><title> Quazzar </title>
 <link rel="stylesheet" type="text/css" href="gstyle.css"></head>';
-echo '<div class = "banner"><h1>QUAZZAR GAMES.COM</h1></div>';
+echo '<center><div class = "banner"><h1>QUAZZAR GAMES.COM</h1></div></center>';
 echo '<center><ul id="navbar">
 <li><a href = "home.php">HOME</a></li>
 <li><a href = "profile.php">PROFILE</a></li>

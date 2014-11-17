@@ -9,11 +9,11 @@
 		session_start();
 	    if($_SESSION['loggedIn'] == 1)
 		{
-			echo '<div class = "hback"><h1 class = "title">'.$_SESSION['user'].'\'s GLOBAL STATISTICS PAGE</h1></div>';
+			echo '<center><div class = "banner"><h1 class = "title">'.$_SESSION['user'].'\'s GLOBAL STATISTICS PAGE</h1></div></center>';
 		}
 		else
 		{
-			echo '<div class = "hback"><h1 class = "title">GLOBAL STATISTICS PAGE</h1></div>';
+			echo '<center><div class = "banner"><h1 class = "title">GLOBAL STATISTICS PAGE</h1></div></center>';
 		}
 		echo '<center><ul id="navbar">';
 			echo'<li><a href = "home.php">HOME</a></li>';

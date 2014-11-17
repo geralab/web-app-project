@@ -64,7 +64,8 @@ div.banner
     background-image: url('q1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:71% 100%;
+    width:70%;
+    border:3px solid;
     border-radius: 20px;
     height:100px;
 }
