@@ -7,7 +7,8 @@
 	<body>
 	<?php
 		session_start();
-	    if($_SESSION['loggedIn'] == 1)
+        
+        if(array_key_exists('loggedIn', $_SESSION) && $_SESSION['loggedIn'] == 1)
 		{
 			echo '<center><div class = "banner"><h1 class = "title">'.$_SESSION['user'].'\'s GLOBAL STATISTICS PAGE</h1></div></center>';
 		}
@@ -23,14 +24,7 @@
 			echo '<li><a href = "login.php">LOGIN</a><li>';
 		echo '</ul></center>';
 		echo '<div class = "normal"></div>';
-		if($_SESSION['loggedIn'] == 1)
-		{
-			echo '<div><p class = "gold">'.$_SESSION['user'].'\'s GLOBAL STATISTICS</p></div>';
-		}
-		else
-		{
-			echo '<div><p class = "gold">GLOBAL STATISTICS</p></div>';
-		}
+	
 			
 			$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 			$dbPassword = trim($fileText);

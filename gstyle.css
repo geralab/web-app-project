@@ -32,10 +32,11 @@ div.descript
     background-image: url("wave3.gif");
     background-repeat: no-repeat;
     background-position:center;
-    border:3px solid; /* div line */
+    border-image: url("shinyb1.png") 30 30 round;
+    /*border:3px solid; /* div line */
+    border-style:solid;
     height:100%;
     width: 50%;
-    border-radius: 20px;
 }
 .descript button
 {
@@ -184,15 +185,19 @@ div.boxEven
 {
 
   color:#000000;
-  background-image: url(light2.gif);
+  background-image: url("light2.gif");
   background-repeat:no-repeat;
   background-size: 100% 100%;
   width:70%;
-  border-image: url(gold1.jpg) 30 30 round;
+  border-image: url("gold1.jpg") 30 30 round;
+  -moz-border-image: url("gold1.jpg") 30 30 round;
+  /*-webkit-border-image:url("gold1.jpg") 30 30 round;*/
+  -o-border-image:url("gold1.jpg") 30 30 round;
+  border-style:solid;
   border-width:70%;
   background-position: center;
   border-radius:20px;
-  border:3px solid; /* div line */
+  /*border:3px solid; /* div line */
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
 }
@@ -201,15 +206,20 @@ div.boxOdd
 {
     
     color:#000000;
-    background-image: url(light6.gif);
+    background-image: url("light6.gif");
     background-repeat:no-repeat;
     background-size: 100% 100%;
     width:70%;
-    border-image: url(gold1.jpg) 30 30 round;
+    border-image: url("gold1.jpg") 30 30 round;
+    -moz-border-image: url("gold1.jpg") 30 30 round;
+    /*-webkit-border-image:url("gold1.jpg") 30 30 round;*/
+    -o-border-image:url("gold1.jpg") 30 30 round;
+    border-style:solid;
     border-width:70%;
+    border-image-width:all;
     background-position: center;
     border-radius:20px;
-    border:3px solid #191919; /* div line */
+    /*border:3px solid #191919; /* div line */
     box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
     
 }
