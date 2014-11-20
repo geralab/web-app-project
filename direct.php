@@ -50,9 +50,10 @@
 				{
 					$gameId = $row['gameId'];
 					$fileName = $row['fileName'];
+                    list($width, $height, $type, $attr) = getimagesize("$fileName");
 					//echo '<div class = "contain">';
 					echo "<center><div class = \"hback\"><h1 class = \"title\">$gameId</h1></div>";
-					echo '<iframe class="game" src = "'.$fileName.'">';
+					echo '<iframe class="game" src = "'.$fileName.'" width = "'.$width.'" height = "'.$height.'" >';
 					//echo '</div>';
 					echo '<br><br>';
 				}
