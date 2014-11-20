@@ -226,6 +226,21 @@ div.boxOdd
     
 }
 
+div.gameDiv
+{
+    
+    background-size: 100% 100%;
+    border-image: url("gold1.jpg") 30 30 round;
+    -moz-border-image: url("gold1.jpg") 30 30 round;
+    /*-webkit-border-image:url("gold1.jpg") 30 30 round;*/
+    -o-border-image:url("gold1.jpg") 30 30 round;
+    border-style:solid;
+    display:inline-block;
+}
+.gameDiv iframe
+{
+    border:none;
+}
 .boxEven img:hover
 {
     opacity:.40;
