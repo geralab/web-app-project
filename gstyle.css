@@ -1,6 +1,8 @@
 /*Set Webpage to devicwidth*/
-@-ms-viewport{
+@-ms-viewport
+{
     width: device-width;
+    height:device-height;
 }
 /*Determins How Games are displayed*/
 iframe.game
@@ -54,7 +56,8 @@ div.descript
     text-align: center;
 }
 /* Helps align text boxes For all labels*/
-label {
+label
+{
     font-family:impact;
     float: left; width: 100px; 
     font-weight: bold;
@@ -105,7 +108,7 @@ img.display
 	display:block;
     margin:auto;
 	width:95%;
-	height:75%;
+	height:50%;
     border: 8px solid;
     border-color: #000000;
     border-radius: 70px;
@@ -134,6 +137,11 @@ form.login
   font-size:25px;
   background-image: url("shinyb1.png");
   background-size: 100% 100%;
+}
+.login textarea
+{
+    width:100%
+
 }
 
 /*form.search
@@ -196,7 +204,6 @@ div.boxEven
   border-style:solid;
   border-width:70%;
   background-position: center;
-  border-radius:20px;
   /*border:3px solid; /* div line */
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 
@@ -218,7 +225,6 @@ div.boxOdd
     border-width:70%;
     border-image-width:all;
     background-position: center;
-    border-radius:20px;
     /*border:3px solid #191919; /* div line */
     box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
     
@@ -239,8 +245,8 @@ div.hback
     background-size: 100% 100%;
     background-color: #eeeeee;
     background-position: center;
-    background-image: url('wave1.gif');
-    width:70%;
+    background-image: url('h1T.jpg');
+    width:25%;
     height:100%
     border-width:70%;
    /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
@@ -390,7 +396,7 @@ textarea
       font-size: 15px;
       background-color: #545454;
       height:25%;
-      width:100px;
+      width:auto;
       color: #ffffff;
       border-radius: 9px;
       -moz-border-radius: 9px;
@@ -415,8 +421,7 @@ a
 select
 {
     padding: 10px 15px 11px !important;
-    background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
-    -webkit-box-shadow:#000 0 1px 2px;
+    background-image: url("gold1.jpg");
     font-size: 18px !important;
     background-color: #000000;
     font-weight: bold;
@@ -428,9 +433,6 @@ select
     font-family:impact;
     border: 1px solid #000000;
     cursor: pointer;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 select:hover
 {
@@ -442,8 +444,7 @@ select:hover
 option
 {
     padding: 10px 15px 11px !important;
-    background: #666 -webkit-gradient( linear, left bottom, left top, color-stop(0.5, rgb(40,40,40)), color-stop(0.5, rgb(80,80,80)) );
-    -webkit-box-shadow:#000 0 1px 2px;
+    background-image: url("gold1.jpg");
     font-size: 18px !important;
     background-color: #000000;
     font-weight: bold;
@@ -455,9 +456,6 @@ option
     font-family:impact;
     border: 1px solid #000000;
     cursor: pointer;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 option:hover
 {
