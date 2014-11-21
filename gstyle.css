@@ -1,3 +1,6 @@
+
+
+
 /*Set Webpage to devicwidth*/
 @-ms-viewport
 {
@@ -475,3 +478,5 @@ option:hover
 }
 /*HIGHLIGHT A TAG ON HOVER*/
 a:hover {color:#ffa500;}
+
+
