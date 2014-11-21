@@ -27,4 +27,4 @@ INSERT INTO Trailer (name,link) VALUES ('DECESION CITY','//www.youtube.com/embed
 ,('ANTICAPATED GAMES 2015','//www.youtube.com/embed/51qhTzYL0PU'),('MORTAL KOMBAT X','//www.youtube.com/embed/oFNDnUYvsTo');
 
 
-INSERT INTO Download (name,link) VALUES ('NINJA NOKU','ninjanoku.swf'),('OCT','oct.png');
+INSERT INTO Download (name,link) VALUES ('NINJA NOKU','ninjanoku.swf'),('OCT','oct.png'),('ASTEROIDS REMAKE','Asteroids.zip'),('REBELLION OF THE DEAD','Zombie.zip');
