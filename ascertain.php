@@ -1,10 +1,11 @@
 <?php
-	if (array_key_exists('ascertain', $_GET) && array_key_exists('tn', $_GET)) 
+	if (array_key_exists('tn', $_GET) && array_key_exists('tgi', $_GET) )
 	{
 	    $query = array();
-		$query[0] = "";
 		$queryNumber= $_GET['ascertain'];
 		$userName= $_GET['tn'];
+        $gameId = $_GET['tgi'];
+        $query[0] = "Insert Into Likes (userName,gameId) Values ($userName,$gameId);";
 		$fileText = file_get_contents('/home/geralab/pass.txt', FILE_USE_INCLUDE_PATH);
 	    $password = trim($fileText);
 		$user = 'geralab';
@@ -16,6 +17,6 @@
 			exit();
 		}
 		$output = array();
-		$result = $database->query($query);
+		$result = $database->query($query[0]);
 	}  
 ?>
