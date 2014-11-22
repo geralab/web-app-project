@@ -48,10 +48,10 @@ div.descript
 .descript p
 {
     height:70%;
-    width: 50%
+    width: 50%;
     font-family: impact;
     font-weight:bold;
-    font-size: 18px;
+    font-size: 60% 60%;
     color: #FFFFFF;
     text-align: center;
 }
@@ -79,7 +79,7 @@ div.banner
     font-weight: bold;
     color:white;
     text-align: center;
-    font-size:50px;
+    font-size:80% 80%;
 
 }
 img.banner
