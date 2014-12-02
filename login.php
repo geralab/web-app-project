@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="gstyle.css">
   <title> LOGIN</title>
 </head>
-<body>
+<body class = "normal">
 <center><div class = "banner"><h1 class = "title">LOGIN</h1></div></center>
 		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>

@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="gstyle.css">
   <title>REGISTER</title>
 </head>
-<body>
+<body class = "normal">
 <center><div class = "banner"><h1 class = "title">REGISTER</h1></div></center>
 		<center><ul id="navbar">
 		    <li><a href = "http://www.cs.okstate.edu/~geralab/home.php">HOME</a></li>

@@ -13,11 +13,11 @@ echo '<html>';
                 if($_SESSION['loggedIn'] == 1)
                 {
                     echo '<center><div class = "hback"><h1 class = "title"> QUAZZAR HOME</h1>';
-                    echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1></div></center>';
+                    echo '<pre><h1 class = "title">WELCOME '. $_SESSION['user'].'</pre></h1></div></center><br>';
                 }
                 else
                 {
-                    echo '<center><div class = "hback"><h1 class = "title"> QUAZZAR HOME</h1></div></center>';
+                    echo '<center><div class = "hback"><h1 class = "title"> QUAZZAR HOME</h1></div></center><br>';
                 }
                 $userId = $_SESSION['user'];
             }
@@ -46,13 +46,17 @@ echo '<html>';
 						echo '<div>';
 						while ($row)
 						{
-                            if($count % 2 == 0)
+                            if($count == 0)
                             {
-                                $divString = "boxEven";
+                                $divString = "boxOne";
                             }
-                            else
+                            else if($count == 1)
                             {
-                                $divString = "boxOdd";
+                                $divString = "boxTwo";
+                            }
+                            else if($count == 2)
+                            {
+                                $divString = "boxThree";
                             }
 							$gameId = $row['gameId'];
 							$pic = $row['pic'];
@@ -60,9 +64,9 @@ echo '<html>';
 							$likes = $row['likes'];
 							echo '<center><div class = "'.$divString.'">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
-							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a></div>';
-							echo "<div class = \"descript\"><span><p class = \"center\">$description
-							NUMBER OF LIKES: $likes</p></span><br>";
+							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a><br></div>';
+							echo "<div class = \"descript\"><p class = \"center\">$description
+							NUMBER OF LIKES: $likes</p>";
                             if(array_key_exists('loggedIn', $_SESSION))
                             {
                                 if($_SESSION['loggedIn'] == 1)
@@ -70,10 +74,10 @@ echo '<html>';
                                     echo "<input class = \"button\"  name = \"like\" value=\"LIKE\">";
                                 }
                             }
-                            echo "</div>";
+                            echo "</div><br>";
 							echo "</div></center><br/>";
 							$row = $result->fetch_array(MYSQLI_ASSOC);
-                            $count = $count + 1;
+                            $count = ($count + 1) % 3;
 						}
 						echo '</div>';
 					}
@@ -115,9 +119,9 @@ echo '<html>';
 							$likes = $row['likes'];
 							echo '<center><div class = "'.$divString.'">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
-							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a></div>';
-							echo "<div class = \"descript\"><span><p class = \"center\">$description
-							NUMBER OF LIKES: $likes</p></span><br>";
+							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a><br></div>';
+							echo "<div class = \"descript\"><p class = \"center\">$description
+							NUMBER OF LIKES: $likes</p>";
                             if(array_key_exists('loggedIn', $_SESSION))
                             {
                                 if($_SESSION['loggedIn'] == 1)
@@ -125,7 +129,7 @@ echo '<html>';
                                     echo "<input class = \"button\"  name = \"like\" value=\"LIKE\">";
                                 }
                             }
-                            echo "</div>";
+                            echo "</div><br>";
 							echo "</div></center><br/>";
 							$row = $result->fetch_array(MYSQLI_ASSOC);
                             $count = $count + 1;

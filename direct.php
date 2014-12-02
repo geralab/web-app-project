@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="gstyle.css">
   <title> GAME PAGE</title>
 </head>
-<body>
+<body class = "normal">
 <center><div class = "banner"><h1 class = "title">GAME PAGE</h1></div></center>
 		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
@@ -52,7 +52,7 @@
 					$fileName = $row['fileName'];
                     $pic = $row['pic'];
                     $type = $row['type'];
-                    echo "<center><div class = \"hback\"><h1 class = \"title\">$gameId</h1></div>";
+                    echo "<center><div class = \"hback\"><h1 class = \"title\">$gameId</h1></div><br>";
                     if($type == "flash")
                     {
                         list($width, $height, $type, $attr) = getimagesize("$fileName");

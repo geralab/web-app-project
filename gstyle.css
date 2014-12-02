@@ -5,7 +5,6 @@
 @-ms-viewport
 {
     width: device-width;
-    height:device-height;
 }
 /*Determins How Games are displayed*/
 
@@ -47,10 +46,9 @@ div.descript
 }
 .descript p
 {
-    height:70%;
-    width: 50%;
+    height:50%;
+    width: 85%;
     font-family: impact;
-    font-weight:bold;
     font-size: 60% 60%;
     color: #FFFFFF;
     text-align: center;
@@ -60,7 +58,6 @@ label
 {
     font-family:impact;
     float: left; width: 100px; 
-    font-weight: bold;
 }
 div.banner
 {
@@ -88,28 +85,38 @@ img.banner
 }
 body
 {
-    background-image: url('bl.jpg');
+    background-image: url('bl.jpg') , url("q1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-	background-color:#000000;
-    background-size:85% 100%;
+    background-color:#000000;
+    background-size:50% 100%, 100% 100%;
+}
+body.normal
+{
+    background-image:  url("q1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color:#000000;
+    background-size: 100% 100%;
 }
 /*Controls How Much Space subdivsion takes up*/
 div.sub
 {
     width:50%;
-    height:70%;
+    height:35%;
 }
 /*Determines how images of games displayed*/
 img.display
 {
-    
 	display:block;
-    margin:auto;
-	width:95%;
-	height:35%;
-    border: 8px solid;
+	width:100%;
+	height:55%;
+    max-width: 320px;
+    max-height: 220px;
+    min-height:220px;
+    border: 5px solid;
     border-color: #000000;
     border-radius: 70px;
 }
@@ -189,11 +196,11 @@ tr
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 /*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC FOR EVENS IN HOME.php*/
-div.boxEven
+div.boxOne
 {
 
   color:#000000;
-  background-image: url("light2.gif");
+  background-image: url("flare1.jpg");
   background-repeat:no-repeat;
   background-size: 100% 100%;
   width:50%;
@@ -209,7 +216,7 @@ div.boxEven
 
 }
 /*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC FOR ODDS IN HOME.php*/
-div.boxOdd
+div.boxTwo
 {
     
     color:#000000;
@@ -229,7 +236,27 @@ div.boxOdd
     box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
     
 }
-
+/*FORMAT STUFF WITHIN BOX I.E GAME IMAGE METAL IMAGE ETC FOR ODDS IN HOME.php*/
+div.boxThree
+{
+    
+    color:#000000;
+    background-image: url("flare2.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:50%;
+    border-image: url("gold1.jpg") 30 30 round;
+    -moz-border-image: url("gold1.jpg") 30 30 round;
+    /*-webkit-border-image:url("gold1.jpg") 30 30 round;*/
+    -o-border-image:url("gold1.jpg") 30 30 round;
+    border-style:solid;
+    border-width:70%;
+    border-image-width:all;
+    background-position: center;
+    /*border:3px solid #191919; /* div line */
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    
+}
 div.gameDiv
 {
     
@@ -373,7 +400,6 @@ textarea
 	display: inline-block;
 	padding: 6px 10px; /* vertical and horizontal padding */
 	text-decoration: none;
-	font-weight: bold;
 	color: #FFFFFF;
 	/*border-right: 2px solid white;	*/
 	
