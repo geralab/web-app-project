@@ -42,7 +42,7 @@
 					while ($row)
 					{
 					    $link = $row['link'];
-						echo '<center><iframe width="560" height="315" src="'.$link.'" frameborder="0" allowfullscreen></iframe></center>';
+						echo '<center><div><iframe class ="t" height="400" src="'.$link.'" frameborder="0" allowfullscreen></iframe></div></center>';
 						echo '<br>';
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 					}

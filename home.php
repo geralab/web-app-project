@@ -67,11 +67,21 @@ echo '<html>';
 							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a><br></div>';
 							echo "<div class = \"descript\"><p class = \"center\">$description
 							NUMBER OF LIKES: $likes</p>";
+                            
                             if(array_key_exists('loggedIn', $_SESSION))
                             {
                                 if($_SESSION['loggedIn'] == 1)
                                 {
-                                    echo "<input class = \"button\"  name = \"like\" value=\"LIKE\">";
+                                    $query2 = "Select userName From Likes Where gameId = '$gameId';";
+                                    $userName = getInfo($query2,'userName',$database);
+                                    if($userName == $_SESSION['user'])
+                                    {
+                                        echo '<button class = "like" disabled></button>';
+                                    }
+                                    else
+                                    {
+                                        echo '<form id = "$gameId"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
+                                    }
                                 }
                             }
                             echo "</div><br>";
@@ -105,13 +115,17 @@ echo '<html>';
 						echo '<div>';
 						while ($row)
 						{
-                            if($count % 2 == 0)
+                            if($count == 0)
                             {
-                                $divString = "boxEven";
+                                $divString = "boxOne";
                             }
-                            else
+                            else if($count == 1)
                             {
-                                $divString = "boxOdd";
+                                $divString = "boxTwo";
+                            }
+                            else if($count == 2)
+                            {
+                                $divString = "boxThree";
                             }
 							$gameId = $row['gameId'];
 							$pic = $row['pic'];
@@ -126,30 +140,53 @@ echo '<html>';
                             {
                                 if($_SESSION['loggedIn'] == 1)
                                 {
-                                    echo "<input class = \"button\"  name = \"like\" value=\"LIKE\">";
+                                    $query2 = "Select userName From Likes Where gameId = '$gameId';";
+                                    $userName = getInfo($query2,'userName',$database);
+                                    if($userName == $_SESSION['user'])
+                                    {
+                                       echo '<button class = "like" disabled></button>';
+                                    }
+                                    else
+                                    {
+                                        echo '<form id = "$gameId"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
+                                    }
+                                    
                                 }
                             }
                             echo "</div><br>";
 							echo "</div></center><br/>";
 							$row = $result->fetch_array(MYSQLI_ASSOC);
-                            $count = $count + 1;
+                            $count = ($count + 1) % 3;
 						}
 						echo '</div>';
 					}
-					echo "<br/>";
+					echo "<br>";
 				} 
 			}
+    
+            function getInfo($query,$col,$database)
+            {
+                $result = $database->query($query);
+                $info='';
+                if (is_object($result))
+                {
+                    $row = $result->fetch_array(MYSQLI_ASSOC);
+                    $info = $row[$col];
+                }
+                return $info;
+            }
 				
 		
 		?>
 		<script>
 		
-				function like(ascertain)
+				function like(tgi)
 				{
 					var httpRequest = new XMLHttpRequest();
-					var url = "ascertain.php?ascertain=" + ascertain;
+					var url = "ascertain.php?tgi=" + tgi.id;
 					httpRequest.open("GET", url, false);
 					httpRequest.send(null);
+                    tgi.submit();
 				}
 			
 		</script>

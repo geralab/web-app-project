@@ -4,7 +4,7 @@
 		<title> BLAPPO'S  </title>
 		<link rel="stylesheet" type="text/css" href="gstyle.css">
 	</head>
-	<body>
+	<body class = "normal">
 	<?php
 		session_start();
         

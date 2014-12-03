@@ -4,8 +4,10 @@
 <link rel="stylesheet" type="text/css" href="gstyle.css">
   <title> ADMINISTRATOR</title>
 </head>
-<body>
-<h1 class = "title"> ADMINISTRATOR </h1>
+<body class = "normal">
+<center><div class = "banner">
+    <h1> ADMINISTRATOR </h1>
+</div></center>
 		<center><ul id="navbar">
 		    <li><a href = "home.php">HOME</a></li>
 			<li><a href = "login.php">LOGIN</a></li>
