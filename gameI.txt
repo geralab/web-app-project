@@ -2,7 +2,7 @@ CREATE TABLE Gamer (userName VARCHAR(100), email VARCHAR(100),
  salt VARCHAR(100), passwordHash VARCHAR(100),admin INT, PRIMARY KEY(userName));
   
 CREATE TABLE Game (fileName VARCHAR(100),pic VARCHAR(100), gameId VARCHAR(100), description VARCHAR(100000)
-,likes INT,type VARCHAR(100), PRIMARY KEY(fileName,pic,gameId));
+,likes INT,type VARCHAR(100), plays INT, PRIMARY KEY(fileName,pic,gameId));
 
 CREATE TABLE Trailer (name VARCHAR(100), link VARCHAR(3000));
 CREATE TABLE SiteVisits (number INT, PRIMARY KEY(number));
@@ -15,11 +15,11 @@ INSERT INTO Gamer (userName,email, salt, passwordHash,admin) VALUES
 	('c3po','pyjuku@gmail.com', '679a4e26587ad06c34bce7348be60d15', '4903c2b6bd66562b669b613d18904b4afb616751690bbebf4ff8084fb9e4b9e8',0);
 
 
-INSERT INTO Game (fileName,pic,gameId,description,likes,type) VALUES	('n-game.swf','ngame.jpg','N-GAME','Youre a black ninja in a race against time traversing numerous treacherous obstacles!',1000,'flash'),
-('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500,'flash')
-,('nindroid.swf','nindroid.jpg','NINDROIDS','Play as a group of Ninjas on a quest to save the world',4000,'flash')
-,('decisionCity.swf','decisionCity.png','DECISION CITY','SHOOT AND KILL AS MANY ZOMBIES AS YOU FUCKING CAN',80000,'flash')
-,('mysticforce.swf','mysticforce.jpg','MYSTIC FORCE','Save the world as a Mystic Force Power Ranger',90000,'flash'),('helicoptergame.swf','helicopter-game.png','HELICOPTER GAME','Dodge treacherous obstacles in a kool helicopter!!',10000000,'flash'),('hanger.swf','hanger.jpg','HANGER','Swing through obtacles without getting hurt!!!',30000,'flash'),('supercar-road-trip.swf','supercar-road-trip.jpg','SUPERCAR-ROAD-TRIP','Ride super fast cars through exhilerating maps',900000,'flash'),('electricman2.swf','EM2.jpg','ELECTRICMAN 2','Fight through enemies with electric combative skills',40000,'flash'),('vex2.swf','vex 2.png','VEX 2','Traverse variable maps with highly acrobatic and adept skills',30000,'flash'),('ultimate-dirtbike-usa.swf','ultimate-dirt-bike-usa.jpg','ULTIMATE DIRT BIKE USA','Ride super fast dirtbikes through really kool courses',7770000,'flash'),('Angry Web.html','Angry Bots.jpg','ANGRY BOTS','Shoots and kill robots within a dynamic 3D environment!',9000000,'unity');
+INSERT INTO Game (fileName,pic,gameId,description,likes,type,plays) VALUES	('n-game.swf','ngame.jpg','N-GAME','Youre a black ninja in a race against time traversing numerous treacherous obstacles!',1000,'flash',0),
+('game1.swf','shooter.gif','GAME1','Fly around in a kool ship shooting aliens!!',500,'flash',0)
+,('nindroid.swf','nindroid.jpg','NINDROIDS','Play as a group of Ninjas on a quest to save the world',4000,'flash',0)
+,('decisionCity.swf','decisionCity.png','DECISION CITY','SHOOT AND KILL AS MANY ZOMBIES AS YOU FUCKING CAN',80000,'flash',0)
+,('mysticforce.swf','mysticforce.jpg','MYSTIC FORCE','Save the world as a Mystic Force Power Ranger',90000,'flash',0),('helicoptergame.swf','helicopter-game.png','HELICOPTER GAME','Dodge treacherous obstacles in a kool helicopter!!',10000000,'flash',0),('hanger.swf','hanger.jpg','HANGER','Swing through obtacles without getting hurt!!!',30000,'flash',0),('supercar-road-trip.swf','supercar-road-trip.jpg','SUPERCAR-ROAD-TRIP','Ride super fast cars through exhilerating maps',900000,'flash',0),('electricman2.swf','EM2.jpg','ELECTRICMAN 2','Fight through enemies with electric combative skills',40000,'flash',0),('vex2.swf','vex 2.png','VEX 2','Traverse variable maps with highly acrobatic and adept skills',30000,'flash',0),('ultimate-dirtbike-usa.swf','ultimate-dirt-bike-usa.jpg','ULTIMATE DIRT BIKE USA','Ride super fast dirtbikes through really kool courses',7770000,'flash',0),('Angry Web.html','Angry Bots.jpg','ANGRY BOTS','Shoots and kill robots within a dynamic 3D environment!',9000000,'unity',0);
 
 
 INSERT INTO Trailer (name,link) VALUES ('DECESION CITY','//www.youtube.com/embed/OktzRuxlUa8'),('DESTINY','//www.youtube.com/embed/clRpcIHpmoY')

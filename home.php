@@ -62,11 +62,12 @@ echo '<html>';
 							$pic = $row['pic'];
 							$description = $row['description'];
 							$likes = $row['likes'];
+                            $plays = $row['plays'];
 							echo '<center><div class = "'.$divString.'">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
 							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a><br></div>';
 							echo "<div class = \"descript\"><p class = \"center\">$description
-							NUMBER OF LIKES: $likes</p>";
+                            NUMBER OF LIKES: $likes NUMBER OF PLAYS: $plays </p>";
                             
                             if(array_key_exists('loggedIn', $_SESSION))
                             {
@@ -76,11 +77,11 @@ echo '<html>';
                                     $userName = getInfo($query2,'userName',$database);
                                     if($userName == $_SESSION['user'])
                                     {
-                                        echo '<button class = "like" disabled></button>';
+                                       
                                     }
                                     else
                                     {
-                                        echo '<form id = "$gameId"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
+                                        echo '<form action = "home.php" id = "'.$gameId.'"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
                                     }
                                 }
                             }
@@ -131,11 +132,12 @@ echo '<html>';
 							$pic = $row['pic'];
 							$description = $row['description'];
 							$likes = $row['likes'];
+                            $plays = $row['plays'];
 							echo '<center><div class = "'.$divString.'">';
 							echo '<h3 class = "w">'.$gameId.'</h3>';
 							echo '<div class = "sub"><a href = "direct.php?direct='.$gameId.'"><img class ="display" src = "'.$pic.'"></a><br></div>';
 							echo "<div class = \"descript\"><p class = \"center\">$description
-							NUMBER OF LIKES: $likes</p>";
+							NUMBER OF LIKES: $likes NUMBER OF PLAYS: $plays </p>";
                             if(array_key_exists('loggedIn', $_SESSION))
                             {
                                 if($_SESSION['loggedIn'] == 1)
@@ -144,11 +146,11 @@ echo '<html>';
                                     $userName = getInfo($query2,'userName',$database);
                                     if($userName == $_SESSION['user'])
                                     {
-                                       echo '<button class = "like" disabled></button>';
+                                       
                                     }
                                     else
                                     {
-                                        echo '<form id = "$gameId"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
+                                        echo '<form action = "home.php" id = "'.$gameId.'"><button id = "'.$gameId.'" class = "like" onclick = "like(this)">LIKE</button></form>';
                                     }
                                     
                                 }

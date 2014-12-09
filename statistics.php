@@ -31,13 +31,34 @@
 			$dbUser = 'geralab';
 			$dbName = $dbUser; 
 			$database = new mysqli("cs.okstate.edu", $dbUser, $dbPassword, $dbName);
-			//$query = "Select * From Trailer;";
+			
 			if (mysqli_connect_errno()) 
 			{
 				printf("Connect failed: %s\n", mysqli_connect_error());
 				exit();
 			}
-			
+        $query = "Select MAX(plays) AS plays From Game;";
+        $query2 = "Select MAX(likes) as likes From Game;";
+        $maxPlays = getInfo($query,'plays',$database);
+        $maxLikes = getInfo($query2,'likes',$database);
+        $query3 = "Select gameId From Game Where plays = $maxPlays;";
+        $query4 = "Select gameId From Game Where likes = $maxLikes;";
+        $maxPlaysName = getInfo($query3,'gameId',$database);
+        $maxLikesName = getInfo($query4,'gameId',$database);
+        
+        echo '<center><div class = "hback"><h1 class = "title">MOSTLIKED GAME:'.$maxLikesName.'</h1><br> <h1 class = "title">LIKES:'.$maxLikes.'</h1><br><h1 class = "title">MOSTPLAYED GAME:'.$maxPlaysName.'</h1><br><h1 class = "title">PLAYS:'.$maxPlays.'</h1></div></center>';
+        
+        function getInfo($query,$col,$database)
+        {
+            $result = $database->query($query);
+            $info='';
+            if (is_object($result))
+            {
+                $row = $result->fetch_array(MYSQLI_ASSOC);
+                $info = $row[$col];
+            }
+            return $info;
+        }
 			
 				
 		

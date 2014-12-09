@@ -73,14 +73,35 @@
                                 echo '</object></div>';
                         //echo '</div>';
                         echo '<br><br>';
+                        $plays = getInfo($query,'plays',$database);
+                        $plays = $plays + 1;
+                        $query2 = "UPDATE Game SET plays = $plays WHERE gameId = '$direct';";
+                        $result = $database->query($query2);
                     }
                     else if($type == "unity")
                     {
+                        $plays = getInfo($query,'plays',$database);
+                        $plays = $plays + 1;
+                        $query2 = "UPDATE Game SET plays = $plays WHERE gameId = '$direct';";
+                        $result = $database->query($query2);
                         header('Location:'.$fileName);
                     }
                 }
 				echo "<br/></center>";
-			} 
+                
+               
+			}
+    function getInfo($query,$col,$database)
+    {
+        $result = $database->query($query);
+        $info='';
+        if (is_object($result))
+        {
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+            $info = $row[$col];
+        }
+        return $info;
+    }
 ?>
 
 </body>
