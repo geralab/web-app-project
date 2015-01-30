@@ -1,5 +1,6 @@
 <?php
     echo '<!DOCTYPE html>';
+    
     echo '<html>';
     
     require 'menu.php';
